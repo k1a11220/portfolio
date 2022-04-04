@@ -34,7 +34,7 @@ const Home: NextPage = () => {
   return (
     <Container>
       <Head>
-        <title>Beomsoo Son</title>
+        <title>Beomsoo Son - Design Engineer & Product Designer</title>
         <meta
           name="description"
           content="Beomsoo Son's portfolio. Product designer, Design Engineer"
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <div style={{ padding: "96px 0 120px;" }}>
+      <div style={{ padding: "96px 0 120px" }}>
         <div
           style={{
             maxWidth: "1140px",
