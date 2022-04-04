@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import { InfoList } from "../components/about/infoList";
+import { CTA } from "../components/cta";
 import { Footer } from "../components/footer";
 import { Navigation } from "../components/navigation";
 import profile from "../public/me.png";
@@ -23,6 +24,14 @@ const Header = styled.header`
   }
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  margin-top: 100px;
+`;
+
 const About: NextPage = () => {
   return (
     <>
@@ -35,7 +44,7 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <div style={{ padding: "96px 0 120px" }}>
+      <div style={{ padding: "96px 0 10px" }}>
         <div
           style={{
             maxWidth: "780px",
@@ -134,6 +143,15 @@ const About: NextPage = () => {
                   },
                 ]}
               />
+              <hr
+                style={{
+                  border: "1px solid #EAEAEA",
+                }}
+              />
+              <ButtonContainer>
+                <CTA color={true} label={"Contact me"} />
+                <CTA color={false} label={"Download Résumé"} />
+              </ButtonContainer>
             </main>
           </div>
         </div>

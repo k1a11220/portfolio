@@ -133,9 +133,6 @@ export function Navigation() {
                   About me
                 </button>
               </Item>
-              <Item>
-                <button>Contact</button>
-              </Item>
             </ItemList>
           </ItemContainer>
         </NavWrapper>
