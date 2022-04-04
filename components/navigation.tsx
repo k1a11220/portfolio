@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const NavContainer: any = styled.nav`
   position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
-  background: #ffffff;
+  background: rgb(255, 255, 255);
   z-index: 50;
   user-select: none;
   border-bottom: ${(props) =>
@@ -15,10 +17,10 @@ const NavContainer: any = styled.nav`
 
 const NavWrapper = styled.div`
   position: relative;
-  max-width: 1140px;
-  height: 60px;
   padding: 0 48px;
   display: flex;
+  height: 84px;
+  transition: max-height 0.5s ease-in-out;
   flex-basis: 100%;
   align-items: center;
   user-select: none;
@@ -26,7 +28,9 @@ const NavWrapper = styled.div`
 `;
 
 const Logo = styled.span`
-  font-size: 22px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
 `;
 
 const ItemContainer = styled.div`
@@ -46,7 +50,7 @@ const ItemList = styled.ul`
 const Item = styled.li`
   display: flex;
   height: 100%;
-  padding: 0 8px;
+  padding: 0 4px;
   align-items: center;
   user-select: none;
 
@@ -54,14 +58,21 @@ const Item = styled.li`
     background-color: #ffffff;
     border: none;
     padding: 8px 12px;
-    color: #3d444b;
+    color: #a7a7af;
+    font-weight: 300;
     font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f2f6fa;
+    }
   }
 `;
 
 export function Navigation() {
+  const router = useRouter();
   const [clientWindowHeight, setClientWindowHeight] = useState(0);
-
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
   };
@@ -76,7 +87,7 @@ export function Navigation() {
   useEffect(() => {
     let backgroundTransparacyVar = clientWindowHeight;
 
-    if (backgroundTransparacyVar > 100) {
+    if (backgroundTransparacyVar > 50) {
       setPadding(true);
     } else {
       setPadding(false);
@@ -84,21 +95,51 @@ export function Navigation() {
   }, [clientWindowHeight]);
   return (
     <NavContainer padding={padding}>
-      <NavWrapper>
-        <div>
-          <Logo>Beomsoo</Logo>
-        </div>
-        <ItemContainer>
-          <ItemList style={{ display: "flex" }}>
-            <Item>
-              <button>About me</button>
-            </Item>
-            <Item>
-              <button>Contact</button>
-            </Item>
-          </ItemList>
-        </ItemContainer>
-      </NavWrapper>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          margin: "auto",
+          maxWidth: "1140px",
+        }}
+      >
+        <NavWrapper
+          style={{
+            maxHeight: padding ? "60px" : "84px",
+          }}
+        >
+          <Link href={"/"}>
+            <Logo>ʙᴇᴏᴍꜱᴏᴏ ꜱᴏɴ</Logo>
+          </Link>
+          <ItemContainer>
+            <ItemList style={{ display: "flex" }}>
+              <Item>
+                <button
+                  style={{
+                    color: router.pathname === "/" ? "#3D444B" : "#A7A7AF",
+                  }}
+                  onClick={() => router.push("/")}
+                >
+                  Works
+                </button>
+              </Item>
+              <Item>
+                <button
+                  style={{
+                    color: router.pathname === "/about" ? "#3D444B" : "#A7A7AF",
+                  }}
+                  onClick={() => router.push("/about")}
+                >
+                  About me
+                </button>
+              </Item>
+              <Item>
+                <button>Contact</button>
+              </Item>
+            </ItemList>
+          </ItemContainer>
+        </NavWrapper>
+      </div>
     </NavContainer>
   );
 }
