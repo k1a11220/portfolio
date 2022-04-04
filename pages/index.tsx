@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Footer } from "../components/footer";
 import { Navigation } from "../components/navigation";
 import { Headline } from "../components/typography";
 
@@ -11,6 +12,22 @@ const Container = styled.div`
   flex-grow: 1;
   justify-content: space-between;
   background-color: #ffffff;
+`;
+
+const ProjectContainer = styled.ul`
+  list-style: none;
+  display: grid;
+  padding: 0;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+`;
+
+const ProjectWrapper = styled.li``;
+
+const Project = styled.div`
+  height: 320px;
+  border-radius: 12px;
+  background-color: #f2f4f6;
 `;
 
 const Home: NextPage = () => {
@@ -69,25 +86,9 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <footer></footer>
+      <Footer />
     </Container>
   );
 };
-
-const ProjectContainer = styled.ul`
-  list-style: none;
-  display: grid;
-  padding: 0;
-  gap: 30px;
-  grid-template-columns: 1fr 1fr;
-`;
-
-const ProjectWrapper = styled.li``;
-
-const Project = styled.div`
-  height: 320px;
-  border-radius: 12px;
-  background-color: #f2f4f6;
-`;
 
 export default Home;
