@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import { InfoList } from "../components/about/infoList";
 import { Footer } from "../components/footer";
 import { Navigation } from "../components/navigation";
 import profile from "../public/me.png";
@@ -63,16 +64,42 @@ const About: NextPage = () => {
               </h3>
             </Header>
             <main style={{ marginTop: "120px" }}>
-              <div>
-                <h3>Work Experience</h3>
-                <div>
-                  <div>
-                    <strong>의무경찰, 대한민국 경찰청</strong>
-                    <p>2021.8 ~ Present</p>
-                    <p>신임 의무경찰 온보딩 경험 개선</p>
-                  </div>
-                </div>
-              </div>
+              <InfoList
+                label={"Experience"}
+                list={[
+                  {
+                    title: "대한민국 경찰청",
+                    summary: "의무경찰 2021.8 ~ Present",
+                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                  },
+                  {
+                    title: "TNG",
+                    summary: "Design Engineer · 2020.1 ~ 2021.8",
+                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                  },
+                  {
+                    title: "BE THE LIGHT",
+                    summary: "Design Engineer · 2021.3 ~ 2021.8",
+                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                  },
+                  {
+                    title: "May KING",
+                    summary: "Founder, Design Instructor · 2018.1 ~ 2019.12",
+                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                  },
+                ]}
+              />
+              <InfoList
+                label={"Research & Patent"}
+                list={[
+                  {
+                    title:
+                      "원자층 복합 증착 챔버 (Atomic layer deposition chamber)",
+                    summary: "KITECH 특허출원 · 10-2021-009228",
+                    desc: "",
+                  },
+                ]}
+              />
             </main>
           </div>
         </div>
