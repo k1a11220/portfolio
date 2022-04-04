@@ -1,26 +1,50 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 
 const Container = styled.div`
-  & strong {
-    font-size: 1.25rem;
-    line-height: 1.25;
-    padding-bottom: 12px;
-  }
+  display: flex;
+  justify-content: space-between;
 
-  & p {
-    font-size: 1rem;
-    margin-top: 8px;
-    line-height: 1.25;
+  & a {
+    color: #3d444b;
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
   }
+`;
+
+const InfoTitle = styled.p`
+  word-break: keep-all;
+  font-size: 1.25rem;
+  line-height: 1.25;
+`;
+
+const InfoSummary = styled.p`
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.25;
+  color: #767e85;
+`;
+
+const InfoDesc = styled(InfoSummary)`
+  color: #3d444b;
 `;
 
 export function Info({ list }: any) {
   return list.map((post: any, index: number) => (
     <Container key={index}>
-      <strong>{post.title}</strong>
-      <p>{post.summary}</p>
-      <p>{post.desc}</p>
+      <div>
+        <InfoTitle>{post.title}</InfoTitle>
+        <InfoSummary>{post.summary}</InfoSummary>
+        <InfoDesc>{post.desc}</InfoDesc>
+      </div>
+      {post.isIcon ? (
+        <a href={post.download} target="_blank" rel="noopener norefferer">
+          <FontAwesomeIcon icon={faFileLines} size="lg" />
+        </a>
+      ) : null}
     </Container>
   ));
 }

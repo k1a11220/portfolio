@@ -95,8 +95,42 @@ const About: NextPage = () => {
                   {
                     title:
                       "원자층 복합 증착 챔버 (Atomic layer deposition chamber)",
-                    summary: "KITECH 특허출원 · 10-2021-009228",
+                    summary: "한국생산기술연구원 특허출원 · 10-2021-009228",
                     desc: "",
+                    isIcon: true,
+                    download: "",
+                  },
+                  {
+                    title:
+                      "원자층 복합 증착 장치 (Atomic layer deposition apparatus)",
+                    summary: "한국생산기술연구원 특허출원 · 10-2021-0157694",
+                    desc: "",
+                    isIcon: true,
+                    download: "",
+                  },
+                  {
+                    title:
+                      "지속가능한 ALD 공정챔버 개발을 위한 공정갭에 따른 가스유동 평가",
+                    summary:
+                      "제 29회 한국반도체학술대회(이하, KCS 2022) · D_0041 / TP1-085",
+                    desc: "",
+                    isIcon: true,
+                    download: "",
+                  },
+                  {
+                    title: "전기클린룸 개발을 위한 수분무 가습노즐 평가",
+                    summary: "대한설비공학회 2021 동계학술발표대회 · 21-W-160",
+                    desc: "",
+                    isIcon: true,
+                    download: "",
+                  },
+                  {
+                    title:
+                      "전기클린룸 개발을 위한 일유체노즐 내부의 물 유동장 수치해석",
+                    summary: "KSME 대한기계학회 열공학부문 춘계학술대회 · ",
+                    desc: "",
+                    isIcon: true,
+                    download: "",
                   },
                 ]}
               />
