@@ -11,7 +11,6 @@ const Container = styled.div`
   flex-grow: 1;
   justify-content: space-between;
   background-color: #ffffff;
-  height: 180vh;
 `;
 
 const Home: NextPage = () => {
@@ -26,7 +25,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <div style={{ padding: "84px 0 120px;" }}>
+      <div style={{ padding: "96px 0 120px;" }}>
         <div
           style={{
             maxWidth: "1140px",
@@ -42,7 +41,7 @@ const Home: NextPage = () => {
               maxWidth: "calc(100% - 48px)",
             }}
           >
-            <header style={{ paddingTop: "80px" }}>
+            <header style={{ paddingTop: "140px", maxWidth: "80%" }}>
               <Headline title={"Hello I'm Beomsoo Son"} color={"#3D444B"} />
               <Headline
                 title={
@@ -51,20 +50,44 @@ const Home: NextPage = () => {
                 color={"#A7A7AF"}
               />
             </header>
-            <main>
-              <div>
-                <ul>
-                  <li></li>
-                </ul>
-              </div>
+            <main style={{ marginTop: "140px" }}>
+              <ProjectContainer>
+                <ProjectWrapper>
+                  <Project></Project>
+                </ProjectWrapper>
+                <ProjectWrapper>
+                  <Project></Project>
+                </ProjectWrapper>
+                <ProjectWrapper>
+                  <Project></Project>
+                </ProjectWrapper>
+                <ProjectWrapper>
+                  <Project></Project>
+                </ProjectWrapper>
+              </ProjectContainer>
             </main>
           </div>
         </div>
       </div>
-
       <footer></footer>
     </Container>
   );
 };
+
+const ProjectContainer = styled.ul`
+  list-style: none;
+  display: grid;
+  padding: 0;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+`;
+
+const ProjectWrapper = styled.li``;
+
+const Project = styled.div`
+  height: 320px;
+  border-radius: 12px;
+  background-color: #f2f4f6;
+`;
 
 export default Home;
