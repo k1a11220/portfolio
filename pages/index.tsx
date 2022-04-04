@@ -1,9 +1,21 @@
+import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Navigation } from "../components/navigation";
+
+const Container = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: #ffffff;
+  height: 180vh;
+`;
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Container>
       <Head>
         <title>Beomsoo Son</title>
         <meta
@@ -12,11 +24,11 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navigation />
       <main></main>
 
       <footer></footer>
-    </div>
+    </Container>
   );
 };
 
