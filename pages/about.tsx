@@ -7,7 +7,10 @@ import { InfoList } from "../components/about/infoList";
 import { CTA } from "../components/cta";
 import { Footer } from "../components/footer";
 import { Navigation } from "../components/navigation";
-import profile from "../public/me.png";
+import porfile_1 from "../public/profile_1.jpeg";
+import porfile_2 from "../public/profile_2.jpg";
+import porfile_3 from "../public/profile_3.jpg";
+import porfile_4 from "../public/profile_4.jpeg";
 
 const Header = styled.header`
   padding-bottom: 80px;
@@ -35,10 +38,11 @@ const ImgContainer = styled.div`
   margin-top: 80px;
 `;
 
-const TestImg = styled.div`
+const Img = styled.div`
   aspect-ratio: 1;
   background-color: #696969;
   border-radius: 8px;
+  overflow: hidden;
 `;
 
 const ButtonContainer = styled.div`
@@ -79,10 +83,18 @@ const About: NextPage = () => {
           >
             <Header>
               <ImgContainer>
-                <TestImg />
-                <TestImg />
-                <TestImg />
-                <TestImg />
+                <Img>
+                  <Image src={porfile_1} layout="responsive" />
+                </Img>
+                <Img>
+                  <Image src={porfile_2} layout="responsive" />
+                </Img>
+                <Img>
+                  <Image src={porfile_3} layout="responsive" />
+                </Img>
+                <Img>
+                  <Image src={porfile_4} layout="responsive" />
+                </Img>
               </ImgContainer>
               <h1>Hello I'm Beomsoo Son</h1>
               <h3>
