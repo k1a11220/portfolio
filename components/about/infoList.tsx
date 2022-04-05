@@ -9,15 +9,16 @@ const InfoContainer = styled.div`
   gap: 16%;
 
   & h3 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     line-height: 1.25;
+    font-weight: 400;
   }
 `;
 
 const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 52px;
   margin-bottom: 160px;
 `;
 

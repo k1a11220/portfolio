@@ -10,6 +10,7 @@ import { Navigation } from "../components/navigation";
 import profile from "../public/me.png";
 
 const Header = styled.header`
+  padding-bottom: 80px;
   & h1 {
     font-size: 1.5rem;
     line-height: 1.25;
@@ -18,10 +19,26 @@ const Header = styled.header`
   }
 
   & h3 {
-    font-size: 1.125rem;
-    line-height: 1.25;
+    font-size: 1.25rem;
+    line-height: 1.5;
     color: #767e85;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
   }
+`;
+
+const ImgContainer = styled.div`
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 32px;
+  margin-top: 80px;
+`;
+
+const TestImg = styled.div`
+  aspect-ratio: 1;
+  background-color: #696969;
+  border-radius: 8px;
 `;
 
 const ButtonContainer = styled.div`
@@ -61,15 +78,21 @@ const About: NextPage = () => {
             }}
           >
             <Header>
-              <div style={{ marginTop: "64px" }}>
-                <Image src={profile} width={90} height={90} />
-              </div>
-              <h1>안녕하세요 손범수입니다.</h1>
+              <ImgContainer>
+                <TestImg />
+                <TestImg />
+                <TestImg />
+                <TestImg />
+              </ImgContainer>
+              <h1>Hello I'm Beomsoo Son</h1>
               <h3>
-                문제의 본질을 바라보는 디자인 엔지니어입니다. 제품의 형태에
-                구애받지 않고 디지털과 하드웨어 사이를 넘나들며 문제를 풀어가고
-                있습니다. 제품과 사용자의 관계에 주목하며, 멋진 서비스가
-                사람들의 삶과 함께하는 모습을 꿈꿉니다.
+                I'm a User Experience + Product Designer constructing
+                playgrounds for people to explore, enjoy, and work in. I strive
+                to foster long-lasting relationships between people and services
+                by weaving carefully crafted personalities into different
+                services. I love watching users develop an affinity for
+                services, allowing the services to become part of the very
+                fabric of people's lives.
               </h3>
             </Header>
             <main style={{ marginTop: "120px" }}>
@@ -78,7 +101,7 @@ const About: NextPage = () => {
                 list={[
                   {
                     title: "대한민국 경찰청",
-                    summary: "의무경찰 2021.8 ~ Present",
+                    summary: "의무경찰 · 2021.8 ~ Present",
                     desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
                   },
                   {
@@ -104,7 +127,7 @@ const About: NextPage = () => {
                   {
                     title:
                       "원자층 복합 증착 챔버 (Atomic layer deposition chamber)",
-                    summary: "한국생산기술연구원 특허출원 · 10-2021-009228",
+                    summary: "한국생산기술연구원 · 10-2021-009228",
                     desc: "",
                     isIcon: true,
                     download: "",
@@ -112,7 +135,7 @@ const About: NextPage = () => {
                   {
                     title:
                       "원자층 복합 증착 장치 (Atomic layer deposition apparatus)",
-                    summary: "한국생산기술연구원 특허출원 · 10-2021-0157694",
+                    summary: "한국생산기술연구원 · 10-2021-0157694",
                     desc: "",
                     isIcon: true,
                     download: "",
@@ -120,8 +143,7 @@ const About: NextPage = () => {
                   {
                     title:
                       "지속가능한 ALD 공정챔버 개발을 위한 공정갭에 따른 가스유동 평가",
-                    summary:
-                      "제 29회 한국반도체학술대회(이하, KCS 2022) · D_0041 / TP1-085",
+                    summary: "제 29회 한국반도체학술대회 · D_0041 / TP1-085",
                     desc: "",
                     isIcon: true,
                     download: "",
@@ -136,7 +158,7 @@ const About: NextPage = () => {
                   {
                     title:
                       "전기클린룸 개발을 위한 일유체노즐 내부의 물 유동장 수치해석",
-                    summary: "KSME 대한기계학회 열공학부문 춘계학술대회 · ",
+                    summary: "대한기계학회 2022 열공학부문 춘계학술대회 · ",
                     desc: "",
                     isIcon: true,
                     download: "",

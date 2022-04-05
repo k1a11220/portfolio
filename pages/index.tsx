@@ -18,7 +18,7 @@ const ProjectContainer = styled.ul`
   list-style: none;
   display: grid;
   padding: 0;
-  gap: 30px;
+  gap: 20px;
   grid-template-columns: 1fr 1fr;
 `;
 
@@ -58,13 +58,13 @@ const Home: NextPage = () => {
               maxWidth: "calc(100% - 48px)",
             }}
           >
-            <header style={{ paddingTop: "140px", maxWidth: "80%" }}>
-              <Headline title={"Hello I'm Beomsoo Son"} color={"#3D444B"} />
+            <header style={{ paddingTop: "140px", maxWidth: "92%" }}>
+              <Headline title={"Hello I'm Beomsoo Son"} color={"#333333"} />
               <Headline
                 title={
                   "Design Engineer and Product Designer based in Suwon, South Korea focused on Design engineering and Digital product design."
                 }
-                color={"#A7A7AF"}
+                color={"#7c7c7c"}
               />
             </header>
             <main style={{ marginTop: "140px" }}>

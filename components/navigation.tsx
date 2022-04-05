@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
 
 const NavContainer: any = styled.nav`
   position: fixed;
@@ -63,7 +62,7 @@ const Item = styled.li`
 const Label = styled.button`
   background-color: #ffffff;
   border: none;
-  padding: 8px 12px;
+  padding: 8px 16px;
   color: #696969;
   font-weight: 300;
   font-size: 1rem;
@@ -110,7 +109,7 @@ export function Navigation() {
       >
         <NavWrapper
           style={{
-            maxHeight: padding ? "72px" : "102px",
+            maxHeight: padding ? "64px" : "102px",
           }}
         >
           <Link href={"/"}>

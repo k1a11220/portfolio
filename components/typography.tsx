@@ -9,6 +9,7 @@ export function Headline({ title, color }: any) {
         color: `${color}`,
         lineHeight: "1.25",
         marginBottom: "1.5rem",
+        fontWeight: 300,
       }}
     >
       {title}
