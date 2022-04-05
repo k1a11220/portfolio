@@ -18,7 +18,7 @@ const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 `;
 
 export function InfoList({ label, list }: any) {

@@ -44,7 +44,7 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <div style={{ padding: "96px 0 10px" }}>
+      <div style={{ padding: "102px 0 10px" }}>
         <div
           style={{
             maxWidth: "780px",
@@ -149,8 +149,8 @@ const About: NextPage = () => {
                 }}
               />
               <ButtonContainer>
-                <CTA color={true} label={"Contact me"} />
-                <CTA color={false} label={"Download Résumé"} />
+                <CTA color={true} label={"Contact"} />
+                <CTA color={false} label={"Resume"} />
               </ButtonContainer>
             </main>
           </div>

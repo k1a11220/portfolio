@@ -44,8 +44,7 @@ export function Footer() {
       <div style={{ width: "100%", maxWidth: "1140px" }}>
         <Wrapper>
           <span style={{ fontSize: "14px" }}>
-            Copyright &copy; {new Date().getFullYear()} Beomsoo Son. All rights
-            reserved.
+            Copyright &copy; {new Date().getFullYear()}, Beomsoo Son
           </span>
           <IconContainer>
             <li>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Button = styled.button`
-  padding: 16px 32px;
+  padding: 12px 24px;
   border-radius: 14px;
   border: none;
   font-size: 1rem;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 const NavContainer: any = styled.nav`
   position: fixed;
@@ -19,7 +20,7 @@ const NavWrapper = styled.div`
   position: relative;
   padding: 0 48px;
   display: flex;
-  height: 96px;
+  height: 102px;
   transition: max-height 0.5s ease-in-out;
   flex-basis: 100%;
   align-items: center;
@@ -27,9 +28,13 @@ const NavWrapper = styled.div`
   background: #ffffff;
 `;
 
-const Logo = styled.span`
-  font-size: 1rem;
-  box-sizing: border-box;
+const Logo = styled.button`
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
   cursor: pointer;
 `;
 
@@ -53,20 +58,20 @@ const Item = styled.li`
   padding: 0 4px;
   align-items: center;
   user-select: none;
+`;
 
-  & button {
-    background-color: #ffffff;
-    border: none;
-    padding: 8px 12px;
-    color: #a7a7af;
-    font-weight: 300;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
+const Label = styled.button`
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  color: #696969;
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
 
-    &:hover {
-      background-color: #f2f6fa;
-    }
+  &:hover {
+    background-color: #f2f6fa;
   }
 `;
 
@@ -105,33 +110,26 @@ export function Navigation() {
       >
         <NavWrapper
           style={{
-            maxHeight: padding ? "60px" : "96px",
+            maxHeight: padding ? "72px" : "102px",
           }}
         >
           <Link href={"/"}>
-            <Logo>ʙᴇᴏᴍꜱᴏᴏ ꜱᴏɴ</Logo>
+            <Logo>BEOMSOO SON</Logo>
           </Link>
           <ItemContainer>
             <ItemList style={{ display: "flex" }}>
               <Item>
-                <button
+                <Label
                   style={{
-                    color: router.pathname === "/" ? "#3D444B" : "#A7A7AF",
-                  }}
-                  onClick={() => router.push("/")}
-                >
-                  Works
-                </button>
-              </Item>
-              <Item>
-                <button
-                  style={{
-                    color: router.pathname === "/about" ? "#3D444B" : "#A7A7AF",
+                    color: router.pathname === "/about" ? "#3D444B" : null,
                   }}
                   onClick={() => router.push("/about")}
                 >
                   About me
-                </button>
+                </Label>
+              </Item>
+              <Item>
+                <Label>Contact</Label>
               </Item>
             </ItemList>
           </ItemContainer>
