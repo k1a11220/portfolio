@@ -62,7 +62,7 @@ const Item = styled.li`
 const Label = styled.button`
   background-color: #ffffff;
   border: none;
-  padding: 8px 16px;
+  padding: 12px 16px;
   color: #696969;
   font-weight: 300;
   font-size: 1rem;
