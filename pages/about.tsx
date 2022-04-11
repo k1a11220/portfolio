@@ -114,12 +114,12 @@ const About: NextPage = () => {
                   {
                     title: "대한민국 경찰청",
                     summary: "의무경찰 · 2021.8 ~ Present",
-                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                    desc: "신임 의무경찰 온보딩 경험 개선. 부대 생활, 근무, 장비 등을 노션으로 문서화하였습니다.",
                   },
                   {
                     title: "TNG",
                     summary: "Design Engineer · 2020.1 ~ 2021.8",
-                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                    desc: "비 접촉식 수소 압축기 개발 한국생산기술연구원 ALD 장비 연구개발 ALD 장비 인터페이스 디자인 OLED 장비 사용성과 안전성 개선",
                   },
                   {
                     title: "BE THE LIGHT",

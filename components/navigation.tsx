@@ -11,7 +11,7 @@ const NavContainer: any = styled.nav`
   background: rgb(255, 255, 255);
   z-index: 50;
   user-select: none;
-  border-bottom: ${(props) =>
+  border-bottom: ${(props: any) =>
     props.padding ? "1px solid rgba(0,27,55,0.1)" : ""};
 `;
 
@@ -33,7 +33,7 @@ const Logo = styled.button`
   padding: 0;
   font-size: 0.875rem;
   letter-spacing: 0.125rem;
-  font-weight: 400;
+  font-weight: 500;
   cursor: pointer;
 `;
 
@@ -59,7 +59,7 @@ const Item = styled.li`
   user-select: none;
 `;
 
-const Label = styled.button`
+const Label: any = styled.button`
   background-color: #ffffff;
   border: none;
   padding: 12px 16px;

@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-export function Headline({ title, color }: any) {
+interface HeadlineProps {
+  title: string;
+  color: string;
+  weight: number;
+}
+
+export function Headline({ title, color, weight }: HeadlineProps) {
   return (
     <h2
       style={{
@@ -9,7 +15,7 @@ export function Headline({ title, color }: any) {
         color: `${color}`,
         lineHeight: "1.25",
         marginBottom: "1.5rem",
-        fontWeight: 300,
+        fontWeight: `${weight}`,
       }}
     >
       {title}

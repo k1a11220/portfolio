@@ -59,12 +59,17 @@ const Home: NextPage = () => {
             }}
           >
             <header style={{ paddingTop: "140px", maxWidth: "92%" }}>
-              <Headline title={"Hello I'm Beomsoo Son"} color={"#333333"} />
+              <Headline
+                title={"Hello I'm Beomsoo Son"}
+                color={"#333333"}
+                weight={400}
+              />
               <Headline
                 title={
                   "Design Engineer and Product Designer based in Suwon, South Korea focused on Design engineering and Digital product design."
                 }
                 color={"#7c7c7c"}
+                weight={300}
               />
             </header>
             <main style={{ marginTop: "140px" }}>
