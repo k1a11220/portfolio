@@ -12,9 +12,10 @@ import Link from "next/link";
 const Container = styled.footer`
   display: flex;
   justify-content: center;
-
+  background-color: #191f28;
   height: 180px;
   margin-top: 80px;
+  color: #b0b8c1;
 `;
 
 const Wrapper = styled.div`
@@ -30,7 +31,7 @@ const IconContainer = styled.ul`
   gap: 40px;
 
   & a {
-    color: #767e85;
+    color: #8b95a1;
   }
 
   & a:hover {

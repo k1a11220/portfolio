@@ -51,7 +51,7 @@ const ButtonContainer = styled.div`
   justify-content: center;
   margin: auto;
   gap: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
 `;
 
 const About: NextPage = () => {
@@ -101,9 +101,9 @@ const About: NextPage = () => {
               <h3>
                 I’m a design engineer and a digital product designer. I enjoy
                 digging into the essence of users' problems and solving them.
-                Regardless of the shape of the product, I solving problems
+                Regardless of the shape of the product, I'm solving problems
                 across software and hardware. I pay attention to the
-                relationship between the product and the user. I dream of a
+                relationship between the product and the user. I dream of an
                 awesome product being with people's lives.
               </h3>
             </Header>

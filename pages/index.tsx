@@ -58,7 +58,7 @@ const Home: NextPage = () => {
               maxWidth: "calc(100% - 48px)",
             }}
           >
-            <header style={{ paddingTop: "140px", maxWidth: "92%" }}>
+            <header style={{ paddingTop: "140px", maxWidth: "60%" }}>
               <Headline
                 title={"Hello I'm Beomsoo Son"}
                 color={"#333333"}

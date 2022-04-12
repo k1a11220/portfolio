@@ -17,13 +17,13 @@ const Container = styled.div`
 
 const InfoTitle = styled.p`
   word-break: keep-all;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: 400;
 `;
 
 const InfoSummary = styled.p`
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-top: 10px;
   line-height: 1.5;
   color: #767e85;

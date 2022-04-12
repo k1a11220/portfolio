@@ -20,9 +20,9 @@ const InfoContainer = styled.div`
   gap: 16%;
 
   & h3 {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     line-height: 1.25;
-    font-weight: 400;
+    font-weight: 500;
   }
 `;
 
