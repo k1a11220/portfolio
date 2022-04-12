@@ -2,6 +2,17 @@ import styled from "@emotion/styled";
 import React from "react";
 import { Info } from "./info";
 
+interface InfoList {
+  label: string;
+  list: Array<{
+    title: string;
+    summary: string;
+    desc: string;
+    isIcon?: boolean;
+    download?: string;
+  }>;
+}
+
 const InfoContainer = styled.div`
   width: 100%;
   display: grid;
@@ -22,7 +33,7 @@ const InfoWrapper = styled.div`
   margin-bottom: 160px;
 `;
 
-export function InfoList({ label, list }: any) {
+export function InfoList({ label, list }: InfoList) {
   return (
     <InfoContainer>
       <h3>{label}</h3>

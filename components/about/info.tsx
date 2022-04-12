@@ -25,7 +25,7 @@ const InfoTitle = styled.p`
 const InfoSummary = styled.p`
   font-size: 1.125rem;
   margin-top: 10px;
-  line-height: 1.25;
+  line-height: 1.5;
   color: #767e85;
   font-weight: 300;
 `;

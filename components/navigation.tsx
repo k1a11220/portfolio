@@ -19,7 +19,7 @@ const NavWrapper = styled.div`
   position: relative;
   padding: 0 48px;
   display: flex;
-  height: 102px;
+  height: 120px;
   transition: max-height 0.5s ease-in-out;
   flex-basis: 100%;
   align-items: center;
@@ -109,7 +109,7 @@ export function Navigation() {
       >
         <NavWrapper
           style={{
-            maxHeight: padding ? "64px" : "102px",
+            maxHeight: padding ? "64px" : "120px",
           }}
         >
           <Link href={"/"}>

@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <div style={{ padding: "102px 0 120px" }}>
+      <div style={{ padding: "120px 0 120px" }}>
         <div
           style={{
             maxWidth: "1140px",

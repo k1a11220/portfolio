@@ -13,11 +13,12 @@ import porfile_3 from "../public/profile_3.jpg";
 import porfile_4 from "../public/profile_4.jpeg";
 
 const Header = styled.header`
-  padding-bottom: 80px;
+  padding-bottom: 200px;
+
   & h1 {
     font-size: 1.5rem;
     line-height: 1.25;
-    margin-top: 24px;
+    margin-top: 32px;
     margin-bottom: 12px;
   }
 
@@ -35,7 +36,7 @@ const ImgContainer = styled.div`
   grid-gap: 16px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 32px;
-  margin-top: 80px;
+  margin-top: 100px;
 `;
 
 const Img = styled.div`
@@ -65,7 +66,7 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <div style={{ padding: "102px 0 10px" }}>
+      <div style={{ padding: "120px 0 10px" }}>
         <div
           style={{
             maxWidth: "780px",
@@ -98,38 +99,37 @@ const About: NextPage = () => {
               </ImgContainer>
               <h1>Hello I'm Beomsoo Son</h1>
               <h3>
-                I'm a User Experience + Product Designer constructing
-                playgrounds for people to explore, enjoy, and work in. I strive
-                to foster long-lasting relationships between people and services
-                by weaving carefully crafted personalities into different
-                services. I love watching users develop an affinity for
-                services, allowing the services to become part of the very
-                fabric of people's lives.
+                I’m a design engineer and a digital product designer. I enjoy
+                digging into the essence of users' problems and solving them.
+                Regardless of the shape of the product, I solving problems
+                across software and hardware. I pay attention to the
+                relationship between the product and the user. I dream of a
+                awesome product being with people's lives.
               </h3>
             </Header>
-            <main style={{ marginTop: "120px" }}>
+            <main>
               <InfoList
                 label={"Experience"}
                 list={[
                   {
-                    title: "대한민국 경찰청",
-                    summary: "의무경찰 · 2021.8 ~ Present",
-                    desc: "신임 의무경찰 온보딩 경험 개선. 부대 생활, 근무, 장비 등을 노션으로 문서화하였습니다.",
+                    title: "KOREAN NATIONAL POLICE AGENCY",
+                    summary: "Auxiliary Police · 2021.8 ~ Present",
+                    desc: "Improved auxiliary police onboarding experience.",
                   },
                   {
                     title: "TNG",
                     summary: "Design Engineer · 2020.1 ~ 2021.8",
-                    desc: "비 접촉식 수소 압축기 개발 한국생산기술연구원 ALD 장비 연구개발 ALD 장비 인터페이스 디자인 OLED 장비 사용성과 안전성 개선",
+                    desc: "Worked with KITECH, Samsung Display to optimize ALD Equipment. Involved in hardware design and user interface design of ALD equipment. Developed non-contact hydrogen compressor.",
                   },
                   {
                     title: "BE THE LIGHT",
                     summary: "Design Engineer · 2021.3 ~ 2021.8",
-                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                    desc: "Designed Javara Light, a portable solar energy solution. BE THE LIGHT is social startup team, which was created with the goal of bringing light to Africa.",
                   },
                   {
                     title: "May KING",
                     summary: "Founder, Design Instructor · 2018.1 ~ 2019.12",
-                    desc: "Designing simple & understandable patterns for communication at WhatsApp for it’s 1+ billion users while maintaining end-to-end encryption.",
+                    desc: "Found May KING, a non-profit educational organization that teaches product design and engineering. Created and operated product design and hardware engineering curriculum.",
                   },
                 ]}
               />
@@ -142,7 +142,8 @@ const About: NextPage = () => {
                     summary: "한국생산기술연구원 · 10-2021-009228",
                     desc: "",
                     isIcon: true,
-                    download: "",
+                    download:
+                      "https://drive.google.com/file/d/1rQBLTZFnai_l8u99YKmbyzYq6n96Pvhw/view?usp=sharing",
                   },
                   {
                     title:
@@ -150,7 +151,8 @@ const About: NextPage = () => {
                     summary: "한국생산기술연구원 · 10-2021-0157694",
                     desc: "",
                     isIcon: true,
-                    download: "",
+                    download:
+                      "https://drive.google.com/file/d/1nkY36Mrk5nwd21ji3nZB43bU_hGDTvPV/view?usp=sharing",
                   },
                   {
                     title:
@@ -158,14 +160,16 @@ const About: NextPage = () => {
                     summary: "제 29회 한국반도체학술대회 · D_0041 / TP1-085",
                     desc: "",
                     isIcon: true,
-                    download: "",
+                    download:
+                      "https://drive.google.com/file/d/1oF_pKLJUzYGfqvyuiFWvCP3-YQFqZBkA/view?usp=sharing",
                   },
                   {
                     title: "전기클린룸 개발을 위한 수분무 가습노즐 평가",
                     summary: "대한설비공학회 2021 동계학술발표대회 · 21-W-160",
                     desc: "",
                     isIcon: true,
-                    download: "",
+                    download:
+                      "https://drive.google.com/file/d/1sPA_wkmsuZalpGL9T9EI_-vAwwvdSL6K/view?usp=sharing",
                   },
                   {
                     title:
@@ -173,7 +177,8 @@ const About: NextPage = () => {
                     summary: "대한기계학회 2022 열공학부문 춘계학술대회 · ",
                     desc: "",
                     isIcon: true,
-                    download: "",
+                    download:
+                      "https://drive.google.com/file/d/1XMzDLgodgGJj8_1wBceAbOGyDHYTxBYa/view?usp=sharing",
                   },
                 ]}
               />
@@ -183,8 +188,16 @@ const About: NextPage = () => {
                 }}
               />
               <ButtonContainer>
-                <CTA color={true} label={"Contact"} />
-                <CTA color={false} label={"Resume"} />
+                <CTA
+                  href="mailto:beskar.son@gmail.com"
+                  isPrimary={true}
+                  label={"Contact"}
+                />
+                <CTA
+                  href="https://docs.google.com/document/d/1ecSm_tNUoL6ZVSBwjyNmpl_TiBkEgGb3oAIUFjjOWdY/edit?usp=sharing"
+                  isPrimary={false}
+                  label={"Resume"}
+                />
               </ButtonContainer>
             </main>
           </div>
