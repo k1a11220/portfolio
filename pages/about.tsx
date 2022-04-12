@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { InfoList } from "../components/about/infoList";
 import { CTA } from "../components/cta";
+import { CustomHead } from "../components/customHead";
 import { Footer } from "../components/footer";
 import { Navigation } from "../components/navigation";
 import porfile_1 from "../public/profile_1.jpeg";
@@ -57,14 +58,10 @@ const ButtonContainer = styled.div`
 const About: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Beomsoo Son - About me</title>
-        <meta
-          name="description"
-          content="Beomsoo Son's portfolio. Product designer, Design Engineer"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <CustomHead
+        title="Beomsoo Son - About me"
+        description="Beomsoo Son's portfolio. Product designer, Design Engineer"
+      />
       <Navigation />
       <div style={{ padding: "120px 0 10px" }}>
         <div

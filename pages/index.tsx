@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import Head from "next/head";
+import { CustomHead } from "../components/customHead";
 import { Footer } from "../components/footer";
 import { Navigation } from "../components/navigation";
 import { Headline } from "../components/typography";
@@ -33,14 +34,10 @@ const Project = styled.div`
 const Home: NextPage = () => {
   return (
     <Container>
-      <Head>
-        <title>Beomsoo Son - Design Engineer & Product Designer</title>
-        <meta
-          name="description"
-          content="Beomsoo Son's portfolio. Product designer, Design Engineer"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <CustomHead
+        title="Beomsoo Son - Design Engineer & Product Designer"
+        description="Beomsoo Son's portfolio. Product designer, Design Engineer"
+      />
       <Navigation />
       <div style={{ padding: "120px 0 120px" }}>
         <div

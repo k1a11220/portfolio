@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../../components/input";
+import { Navigation } from "../../components/navigation";
 
 interface PasswordForm {
   password: string;
@@ -32,7 +33,10 @@ const ALDPage: NextPage = () => {
   }, []);
 
   return verfied ? (
-    <div>ALD Contents</div>
+    <>
+      <Navigation />
+      <header></header>
+    </>
   ) : (
     <form onSubmit={handleSubmit(onValid)}>
       <Input
