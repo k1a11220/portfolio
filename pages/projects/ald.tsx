@@ -34,8 +34,9 @@ const ALDPage: NextPage = () => {
 
   return verfied ? (
     <>
-      <Navigation />
-      <header></header>
+      <header>
+        <h1>ALD Equipments</h1>
+      </header>
     </>
   ) : (
     <form onSubmit={handleSubmit(onValid)}>
