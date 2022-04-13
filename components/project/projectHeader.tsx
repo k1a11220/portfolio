@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "@emotion/styled";
 
+interface ProjectHeader {
+  title: string;
+  description: string;
+  timeline: string;
+  role: string;
+  profile: Array<{ name: string; role: string; image: string }>;
+}
+
 const Header = styled.header`
   display: flex;
   flex-direction: column;
@@ -84,6 +92,7 @@ const ProfileDetail = styled.div`
 
   & p:first-of-type {
     margin-bottom: 4px;
+    font-size: 1rem;
     color: #333d4b;
   }
 
@@ -92,7 +101,13 @@ const ProfileDetail = styled.div`
   }
 `;
 
-export function ProjectHeader() {
+export function ProjectHeader({
+  title,
+  description,
+  timeline,
+  role,
+  profile,
+}: ProjectHeader) {
   return (
     <Header>
       <HeaderBg>
@@ -112,53 +127,32 @@ export function ProjectHeader() {
             }}
           >
             <div>
-              <h1>ALD Equipments develop project</h1>
-              <p>
-                How we reduced friction in one of the identity confirmation flow
-                of Facebook
-              </p>
+              <h1>{title}</h1>
+              <p>{description}</p>
             </div>
             <TitleImg></TitleImg>
             <div style={{ display: "flex", gap: "72px", paddingTop: "40px" }}>
               <ListWrapper>
                 <p>Timeline</p>
-                <ProfileList>Dec 2018 - Jan 2019</ProfileList>
+                <ProfileList>{timeline}</ProfileList>
               </ListWrapper>
               <ListWrapper>
                 <p>Role</p>
-                <ProfileList>Design Engineering & Research</ProfileList>
+                <ProfileList>{role}</ProfileList>
               </ListWrapper>
             </div>
             <ListWrapper>
               <p>Team</p>
               <ProfileList>
-                <ProfileWrapper>
-                  <li>
+                {profile.map((item, index) => (
+                  <ProfileWrapper key={index}>
                     <ProfileImg></ProfileImg>
                     <ProfileDetail>
-                      <p>TNG</p>
-                      <p>Design Engineering</p>
+                      <p>{item.name}</p>
+                      <p>{item.role}</p>
                     </ProfileDetail>
-                  </li>
-                </ProfileWrapper>
-                <ProfileWrapper>
-                  <li>
-                    <ProfileImg></ProfileImg>
-                    <ProfileDetail>
-                      <p>KITECH</p>
-                      <p>Research, Test</p>
-                    </ProfileDetail>
-                  </li>
-                </ProfileWrapper>
-                <ProfileWrapper>
-                  <li>
-                    <ProfileImg></ProfileImg>
-                    <ProfileDetail>
-                      <p>Samsung Display</p>
-                      <p>Research</p>
-                    </ProfileDetail>
-                  </li>
-                </ProfileWrapper>
+                  </ProfileWrapper>
+                ))}
               </ProfileList>
             </ListWrapper>
           </div>
