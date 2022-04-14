@@ -31,7 +31,9 @@ const Home: NextPage = () => {
         title="Beomsoo Son - Design Engineer & Product Designer"
         description="Beomsoo Son's portfolio. Product designer, Design Engineer"
       />
-      <header style={{ paddingTop: "140px", maxWidth: "60%" }}>
+      <header
+        style={{ marginTop: "120px", paddingTop: "140px", maxWidth: "60%" }}
+      >
         <Headline
           title={"Hello I'm Beomsoo Son"}
           color={"#333333"}

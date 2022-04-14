@@ -117,6 +117,7 @@ export function ProjectHeader({
       <HeaderBg>
         <div
           style={{
+            paddingTop: "120px",
             maxWidth: "780px",
             width: "100%",
             height: "100%",

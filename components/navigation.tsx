@@ -8,11 +8,14 @@ const NavContainer: any = styled.nav`
   display: flex;
   justify-content: center;
   width: 100%;
-  background: rgb(255, 255, 255);
+  background: none;
   z-index: 50;
   user-select: none;
   border-bottom: ${(props: any) =>
     props.padding ? "1px solid rgba(0,27,55,0.1)" : ""};
+  background-color: ${(props: any) =>
+    props.padding ? "#ffffff" : "transparent"};
+  transition: background 0.3s ease-in-out;
 `;
 
 const NavWrapper = styled.div`
@@ -24,17 +27,17 @@ const NavWrapper = styled.div`
   flex-basis: 100%;
   align-items: center;
   user-select: none;
-  background: #ffffff;
+  background: transparent;
 `;
 
 const Logo = styled.button`
-  background-color: #ffffff;
   border: none;
   padding: 0;
   font-size: 0.75rem;
   letter-spacing: 0.15rem;
   font-weight: 500;
   cursor: pointer;
+  background: transparent;
 `;
 
 const ItemContainer = styled.div`
@@ -60,7 +63,6 @@ const Item = styled.li`
 `;
 
 const Label: any = styled.button`
-  background-color: #ffffff;
   border: none;
   padding: 12px 16px;
   color: #696969;
@@ -68,6 +70,7 @@ const Label: any = styled.button`
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
+  background: transparent;
 
   &:hover {
     background-color: #f2f6fa;

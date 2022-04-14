@@ -17,24 +17,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Container>
       <Navigation />
-      <div style={{ padding: "120px 0 20px" }}>
+      <div
+        style={{
+          maxWidth: router.pathname === "/" ? "1140px" : "780px",
+          width: "100%",
+          height: "100%",
+          margin: "auto",
+        }}
+      >
         <div
           style={{
-            maxWidth: router.pathname === "/" ? "1140px" : "780px",
-            width: "100%",
-            height: "100%",
+            width: "92%",
             margin: "auto",
+            maxWidth: "calc(100% - 48px)",
           }}
         >
-          <div
-            style={{
-              width: "92%",
-              margin: "auto",
-              maxWidth: "calc(100% - 48px)",
-            }}
-          >
-            {children}
-          </div>
+          {children}
         </div>
       </div>
       <Footer />
