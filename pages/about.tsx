@@ -1,13 +1,10 @@
 import styled from "@emotion/styled";
 import { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import { InfoList } from "../components/about/infoList";
 import { CTA } from "../components/cta";
 import { CustomHead } from "../components/customHead";
-import { Footer } from "../components/footer";
-import { Navigation } from "../components/navigation";
 import porfile_1 from "../public/profile_1.jpeg";
 import porfile_2 from "../public/profile_2.jpg";
 import porfile_3 from "../public/profile_3.jpg";

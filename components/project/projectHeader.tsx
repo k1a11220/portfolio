@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "@emotion/styled";
+import Image from "next/image";
 
 interface ProjectHeader {
   title: string;
   description: string;
   timeline: string;
   role: string;
-  profile: Array<{ name: string; role: string; image: string }>;
+  profile: Array<{ name: string; role: string; image: any }>;
+  thumbnail: any;
 }
 
 const Header = styled.header`
@@ -40,7 +42,7 @@ const HeaderBg = styled.div`
 
 const TitleImg = styled.div`
   background-color: #78899b;
-  height: 440px;
+  overflow: hidden;
   margin-top: 56px;
   border-radius: 16px;
 `;
@@ -65,9 +67,10 @@ const ProfileList = styled.div`
 const ProfileImg = styled.div`
   width: 48px;
   height: 48px;
-  background-color: #1d1d1d;
+  background-color: #ffffff;
   border-radius: 50%;
   margin-right: 0.75rem;
+  overflow: hidden;
 `;
 
 const ProfileWrapper = styled.ul`
@@ -107,6 +110,7 @@ export function ProjectHeader({
   timeline,
   role,
   profile,
+  thumbnail,
 }: ProjectHeader) {
   return (
     <Header>
@@ -130,7 +134,9 @@ export function ProjectHeader({
               <h1>{title}</h1>
               <p>{description}</p>
             </div>
-            <TitleImg></TitleImg>
+            <TitleImg>
+              <Image src={thumbnail} layout="responsive" />
+            </TitleImg>
             <div style={{ display: "flex", gap: "72px", paddingTop: "40px" }}>
               <ListWrapper>
                 <p>Timeline</p>
@@ -146,7 +152,9 @@ export function ProjectHeader({
               <ProfileList>
                 {profile.map((item, index) => (
                   <ProfileWrapper key={index}>
-                    <ProfileImg></ProfileImg>
+                    <ProfileImg>
+                      <Image src={item.image} layout="responsive" />
+                    </ProfileImg>
                     <ProfileDetail>
                       <p>{item.name}</p>
                       <p>{item.role}</p>

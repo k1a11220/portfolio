@@ -31,8 +31,8 @@ const Logo = styled.button`
   background-color: #ffffff;
   border: none;
   padding: 0;
-  font-size: 0.875rem;
-  letter-spacing: 0.125rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.15rem;
   font-weight: 500;
   cursor: pointer;
 `;

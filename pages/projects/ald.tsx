@@ -9,6 +9,10 @@ import {
   Paragraph,
   Section,
 } from "../../components/typography";
+import thumbnail from "../../media/thumbnail_ald.jpg";
+import samsungLogo from "../../media/samsung_logo.png";
+import kitechLogo from "../../media/kitech_logo.png";
+import tngLogo from "../../media/tng_logo.png";
 
 const ALDPage: NextPage = () => {
   return (
@@ -24,10 +28,11 @@ const ALDPage: NextPage = () => {
           timeline="Dec 2018 - Jan 2019"
           role="Design Engineering & Research"
           profile={[
-            { name: "TNG", role: "Design Engineering", image: "jiyeon" },
-            { name: "KITECH", role: "Research, Test", image: "jiyeon" },
-            { name: "Samsung Display", role: "Research", image: "jiyeon" },
+            { name: "TNG", role: "Design Engineering", image: tngLogo },
+            { name: "KITECH", role: "Research, Test", image: kitechLogo },
+            { name: "Samsung Display", role: "Research", image: samsungLogo },
           ]}
+          thumbnail={thumbnail}
         />
         <Divider />
         <Section>

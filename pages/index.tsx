@@ -1,26 +1,28 @@
 import styled from "@emotion/styled";
-import type { NextPage } from "next";
-import Head from "next/head";
 import { CustomHead } from "../components/customHead";
-import { Footer } from "../components/footer";
-import { Navigation } from "../components/navigation";
 import { Headline } from "../components/typography";
+import type { NextPage } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import Thumbnail_ald from "../media/thumbnail_ald.jpg";
 
 const ProjectContainer = styled.ul`
   list-style: none;
   display: grid;
   padding: 0;
-  gap: 20px;
+  gap: 16px;
   grid-template-columns: 1fr 1fr;
 `;
 
-const ProjectWrapper = styled.li``;
-
-const Project = styled.div`
+const ProjectWrapper = styled.li`
+  cursor: pointer;
   height: 320px;
   border-radius: 12px;
   background-color: #f2f4f6;
+  overflow: hidden;
 `;
+
+const Project = styled(Image)``;
 
 const Home: NextPage = () => {
   return (
@@ -46,16 +48,9 @@ const Home: NextPage = () => {
       <main style={{ marginTop: "140px" }}>
         <ProjectContainer>
           <ProjectWrapper>
-            <Project></Project>
-          </ProjectWrapper>
-          <ProjectWrapper>
-            <Project></Project>
-          </ProjectWrapper>
-          <ProjectWrapper>
-            <Project></Project>
-          </ProjectWrapper>
-          <ProjectWrapper>
-            <Project></Project>
+            <Link href="/projects/ald">
+              <Project src={Thumbnail_ald} layout="responsive"></Project>
+            </Link>
           </ProjectWrapper>
         </ProjectContainer>
       </main>
