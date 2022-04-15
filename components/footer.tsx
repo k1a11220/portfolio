@@ -23,6 +23,13 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 48px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+    padding: 0;
+  }
 `;
 
 const IconContainer = styled.ul`

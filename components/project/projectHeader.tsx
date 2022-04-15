@@ -21,11 +21,13 @@ const Header = styled.header`
     font-weight: 500;
     margin-top: 5rem;
     margin-bottom: 1rem;
+    line-height: 1.25;
   }
 
   & p {
     font-size: 1rem;
     color: #767e85;
+    line-height: 1.25;
   }
 `;
 
@@ -57,17 +59,17 @@ const ListWrapper = styled.div`
 
 const ProfileList = styled.div`
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-top: 1.125rem;
-  gap: 72px;
-  min-width: 184px;
-  overflow: scroll;
+  grid-gap: 24px;
 `;
 
 const ProfileImg = styled.div`
   width: 48px;
   height: 48px;
   background-color: #ffffff;
+  border: 1px solid #e6e6e6;
   border-radius: 50%;
   margin-right: 0.75rem;
   overflow: hidden;
@@ -138,16 +140,22 @@ export function ProjectHeader({
             <TitleImg>
               <Image src={thumbnail} layout="responsive" />
             </TitleImg>
-            <div style={{ display: "flex", gap: "72px", paddingTop: "40px" }}>
-              <ListWrapper>
-                <p>Timeline</p>
-                <ProfileList>{timeline}</ProfileList>
-              </ListWrapper>
-              <ListWrapper>
-                <p>Role</p>
-                <ProfileList>{role}</ProfileList>
-              </ListWrapper>
-            </div>
+            <ListWrapper>
+              <p>Timeline</p>
+              <ProfileList>
+                <ProfileWrapper>
+                  <ProfileDetail>{timeline}</ProfileDetail>
+                </ProfileWrapper>
+              </ProfileList>
+            </ListWrapper>
+            <ListWrapper>
+              <p>Role</p>
+              <ProfileList>
+                <ProfileWrapper>
+                  <ProfileDetail>{role}</ProfileDetail>
+                </ProfileWrapper>
+              </ProfileList>
+            </ListWrapper>
             <ListWrapper>
               <p>Team</p>
               <ProfileList>

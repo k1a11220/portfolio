@@ -11,7 +11,7 @@ import porfile_3 from "@media/profile_3.jpg";
 import porfile_4 from "@media/profile_4.jpeg";
 
 const Header = styled.header`
-  padding-bottom: 200px;
+  padding-bottom: 220px;
   padding-top: 120px;
 
   & h1 {
@@ -28,6 +28,11 @@ const Header = styled.header`
     margin-bottom: 1.5rem;
     font-weight: 300;
   }
+
+  @media (max-width: 768px) {
+    padding-bottom: 140px;
+    padding-top: 80px;
+  }
 `;
 
 const ImgContainer = styled.div`
@@ -36,6 +41,10 @@ const ImgContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 32px;
   margin-top: 100px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const Img = styled.div`
@@ -91,7 +100,7 @@ const About: NextPage = () => {
             {
               title: "KOREAN NATIONAL POLICE AGENCY",
               summary: "Auxiliary Police · 2021.8 ~ Present",
-              desc: "Improved auxiliary police onboarding experience.",
+              desc: "Improve auxiliary police onboarding experience.",
             },
             {
               title: "TNG",

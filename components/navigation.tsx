@@ -28,6 +28,10 @@ const NavWrapper = styled.div`
   align-items: center;
   user-select: none;
   background: transparent;
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+  }
 `;
 
 const Logo = styled.button`
@@ -52,12 +56,16 @@ const ItemList = styled.ul`
   margin: 0 0 0 auto;
   z-index: 10;
   list-style: none;
+  gap: 10px;
+
+  @media (max-width: 768px) {
+    gap: 0;
+  }
 `;
 
 const Item = styled.li`
   display: flex;
   height: 100%;
-  padding: 0 4px;
   align-items: center;
   user-select: none;
 `;

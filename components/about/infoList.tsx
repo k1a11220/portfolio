@@ -19,6 +19,11 @@ const InfoContainer = styled.div`
   grid-template-columns: 1fr 2fr;
   gap: 16%;
 
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
   & h3 {
     font-size: 1.5rem;
     line-height: 1.25;

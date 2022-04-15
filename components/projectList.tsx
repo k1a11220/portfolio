@@ -9,12 +9,16 @@ const ProjectContainer = styled.ul`
   padding: 0;
   gap: 16px;
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Project = styled.li`
   cursor: pointer;
-  height: 320px;
-  border-radius: 12px;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
   background-color: #f2f4f6;
   overflow: hidden;
 `;
@@ -22,6 +26,11 @@ const Project = styled.li`
 export function ProjectList() {
   return (
     <ProjectContainer>
+      <Project>
+        <Link href="/projects/ald">
+          <Image src={Thumbnail_ald} layout="responsive"></Image>
+        </Link>
+      </Project>
       <Project>
         <Link href="/projects/ald">
           <Image src={Thumbnail_ald} layout="responsive"></Image>
