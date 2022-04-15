@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
-import { Footer } from "../components/footer";
-import { Navigation } from "../components/navigation";
+import { Footer } from "@components/footer";
+import { Navigation } from "@components/navigation";
 
 const Container = styled.div`
   position: relative;

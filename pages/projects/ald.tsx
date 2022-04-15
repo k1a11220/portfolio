@@ -1,18 +1,18 @@
 import { NextPage } from "next";
 import React from "react";
-import { CustomHead } from "../../components/customHead";
-import { ProjectHeader } from "../../components/project/projectHeader";
+import { CustomHead } from "@components/customHead";
+import { ProjectHeader } from "@components/project/projectHeader";
 import {
   Divider,
   H3,
   ImgContainer,
   Paragraph,
   Section,
-} from "../../components/typography";
-import thumbnail from "../../media/thumbnail_ald.jpg";
-import samsungLogo from "../../media/samsung_logo.png";
-import kitechLogo from "../../media/kitech_logo.png";
-import tngLogo from "../../media/tng_logo.png";
+} from "@components/typography";
+import thumbnail from "@media/thumbnail_ald.jpg";
+import samsungLogo from "@media/samsung_logo.png";
+import kitechLogo from "@media/kitech_logo.png";
+import tngLogo from "@media/tng_logo.png";
 
 const ALDPage: NextPage = () => {
   return (

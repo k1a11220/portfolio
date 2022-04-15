@@ -1,17 +1,18 @@
 import styled from "@emotion/styled";
-import { NextPage } from "next";
 import Image from "next/image";
-import React from "react";
-import { InfoList } from "../components/about/infoList";
-import { CTA } from "../components/cta";
-import { CustomHead } from "../components/customHead";
-import porfile_1 from "../public/profile_1.jpeg";
-import porfile_2 from "../public/profile_2.jpg";
-import porfile_3 from "../public/profile_3.jpg";
-import porfile_4 from "../public/profile_4.jpeg";
+import { NextPage } from "next";
+import { InfoList } from "@components/about/infoList";
+import { CTA } from "@components/cta";
+import { CustomHead } from "@components/customHead";
+
+import porfile_1 from "@media/profile_1.jpeg";
+import porfile_2 from "@media/profile_2.jpg";
+import porfile_3 from "@media/profile_3.jpg";
+import porfile_4 from "@media/profile_4.jpeg";
 
 const Header = styled.header`
   padding-bottom: 200px;
+  padding-top: 120px;
 
   & h1 {
     font-size: 1.5rem;
