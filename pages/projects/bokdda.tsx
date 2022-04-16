@@ -2,7 +2,7 @@ import { CustomHead } from "@components/customHead";
 import { ProjectHeader } from "@components/project/projectHeader";
 import { Divider, Section } from "@components/typography";
 import { NextPage } from "next";
-import thumbnail from "@media/thumbnail_bokdda.jpg";
+import thumbnail from "@media/thumbnail_bokdda.png";
 
 const BokddaPage: NextPage = () => {
   return (

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { CustomHead } from "@components/customHead";
 import { Headline } from "@components/typography";
-import { ProjectList } from "@components/projectList";
+import { ProjectList } from "@components/home/projectList";
 
 const Home: NextPage = () => {
   return (
