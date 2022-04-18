@@ -2,26 +2,29 @@ import { CustomHead } from "@components/customHead";
 import { ProjectHeader } from "@components/project/projectHeader";
 import { Divider, Section } from "@components/typography";
 import { NextPage } from "next";
-import thumbnail from "@media/thumbnail_bokdda.png";
+import thumbnail from "@media/hero_bokdda.png";
+import kitechLogo from "@media/kitech_logo.png";
+import tngLogo from "@media/tng_logo.png";
 
 const BokddaPage: NextPage = () => {
   return (
     <>
       <CustomHead
-        title="ALD Equipments develop project"
+        title="볶다, 복지 검색 서비스 개발 프로젝트"
         description="How we reduced friction in one of the identity confirmation flow of Facebook"
       />
       <article>
         <ProjectHeader
-          title="ALD Equipments develop project"
+          title="볶다, 복지 검색 서비스 개발 프로젝트"
           description="How we reduced friction in one of the identity confirmation flow of Facebook"
           timeline="Dec 2018 - Jan 2019"
-          role="Design Engineering & Research"
+          role="Product Design & MVP developing"
           profile={[
-            { name: "Beyonghun", role: "Design Engineering", image: tngLogo },
-            { name: "Wonjun", role: "Research, Test", image: kitechLogo },
+            { name: "Wonjun", role: "Research", image: kitechLogo },
+            { name: "Beyonghun", role: "Product Strategy", image: tngLogo },
           ]}
           thumbnail={thumbnail}
+          background={"#ffffff"}
         />
         <Divider />
         <Section></Section>

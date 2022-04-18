@@ -9,6 +9,7 @@ interface ProjectHeader {
   role: string;
   profile: Array<{ name: string; role: string; image: any }>;
   thumbnail: any;
+  background: string;
 }
 
 const Header = styled.header`
@@ -31,19 +32,19 @@ const Header = styled.header`
   }
 `;
 
-const HeaderBg = styled.div`
+const HeaderBg = styled.div<{ background: string }>`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  background-color: #f7fafc;
+  background-color: ${({ background }) => background};
   overflow: visible;
   padding-bottom: 80px;
   border-bottom: 1px solid #e6e6e6;
 `;
 
 const TitleImg = styled.div`
-  background-color: #78899b;
+  background-color: none;
   overflow: hidden;
   margin-top: 56px;
   border-radius: 16px;
@@ -113,10 +114,11 @@ export function ProjectHeader({
   role,
   profile,
   thumbnail,
+  background,
 }: ProjectHeader) {
   return (
     <Header>
-      <HeaderBg>
+      <HeaderBg background={background}>
         <div
           style={{
             paddingTop: "120px",

@@ -33,6 +33,7 @@ const ALDPage: NextPage = () => {
             { name: "Samsung Display", role: "Research", image: samsungLogo },
           ]}
           thumbnail={thumbnail}
+          background={"#f7fafc"}
         />
         <Divider />
         <Section>
