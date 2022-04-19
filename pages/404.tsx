@@ -49,8 +49,13 @@ export default function Custom404() {
         <h1>404</h1>
         <p>The page you’re looking for can’t be found.</p>
         <div>
-          <CTA isPrimary={true} label={"Back to home"} href="/" />
-          <CTA isPrimary={false} label={"Contact me"} href="/" />
+          <CTA isPrimary={true} label={"Back to home"} href="/" blank={false} />
+          <CTA
+            isPrimary={false}
+            label={"Contact me"}
+            href="mailto:beskar.son@gmail.com"
+            blank={true}
+          />
         </div>
       </PageWrapper>
     </PageContainer>

@@ -5,6 +5,7 @@ interface CTAType {
   label: string;
   href: string;
   isPrimary: boolean;
+  blank: boolean;
 }
 
 const Button = styled.a<{ isPrimary: boolean }>`
@@ -28,11 +29,11 @@ const Button = styled.a<{ isPrimary: boolean }>`
   }
 `;
 
-export function CTA({ label, isPrimary, href }: CTAType) {
+export function CTA({ label, isPrimary, blank, href }: CTAType) {
   return (
     <Button
-      target="_blank"
-      rel="noopener norefferer"
+      target={blank ? "_blank" : ""}
+      rel={blank ? "noopener norefferer" : ""}
       href={href}
       isPrimary={isPrimary}
     >

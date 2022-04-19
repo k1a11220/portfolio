@@ -177,11 +177,13 @@ const About: NextPage = () => {
             href="mailto:beskar.son@gmail.com"
             isPrimary={true}
             label={"Contact"}
+            blank={true}
           />
           <CTA
             href="https://docs.google.com/document/d/1ecSm_tNUoL6ZVSBwjyNmpl_TiBkEgGb3oAIUFjjOWdY/edit?usp=sharing"
             isPrimary={false}
             label={"Resume"}
+            blank={true}
           />
         </ButtonContainer>
       </main>
