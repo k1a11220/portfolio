@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
-import { CustomHead } from "@components/customHead";
-import { ProjectHeader } from "@components/project/projectHeader";
+import { CustomHead } from "@components/custom-head";
+import { ProjectHeader } from "@components/project/project-header";
 import {
   Divider,
   H3,

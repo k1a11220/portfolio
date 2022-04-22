@@ -3,7 +3,7 @@ import Image from "next/image";
 import { NextPage } from "next";
 import { InfoList } from "@components/about/infoList";
 import { CTA } from "@components/cta";
-import { CustomHead } from "@components/customHead";
+import { CustomHead } from "@components/custom-head";
 
 import porfile_1 from "@media/profile_1.jpeg";
 import porfile_2 from "@media/profile_2.jpg";

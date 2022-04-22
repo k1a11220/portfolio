@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { CustomHead } from "@components/customHead";
+import { CustomHead } from "@components/custom-head";
 import { Headline } from "@components/typography";
 import { ProjectList } from "@components/home/projectList";
 
