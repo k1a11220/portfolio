@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Image from "next/image";
+import { DownloadAppstore } from "@media/download-appstore";
+import { VisitWeb } from "@media/visit-web";
+import { DownloadPlaystore } from "@media/download-playstore";
 
 interface ProjectHeader {
   title: string;
@@ -10,6 +13,7 @@ interface ProjectHeader {
   profile: Array<{ name: string; role: string; image: any }>;
   thumbnail: any;
   background: string;
+  product: Array<{ type: "ios" | "aos" | "web"; href: string }>;
 }
 
 const Header = styled.header`
@@ -115,6 +119,7 @@ export function ProjectHeader({
   profile,
   thumbnail,
   background,
+  product,
 }: ProjectHeader) {
   return (
     <Header>
@@ -142,6 +147,51 @@ export function ProjectHeader({
             <TitleImg>
               <Image src={thumbnail} layout="responsive" />
             </TitleImg>
+            <ListWrapper>
+              <p>Product</p>
+              <ProfileList>
+                <ProfileDetail>
+                  <ProfileWrapper>
+                    {product?.map((item, index) => {
+                      if (item.type === "ios") {
+                        return (
+                          <a
+                            target="_blank"
+                            rel="noopener norefferer"
+                            key={index}
+                            href={item.href}
+                          >
+                            <DownloadAppstore />
+                          </a>
+                        );
+                      } else if (item.type === "aos") {
+                        return (
+                          <a
+                            target="_blank"
+                            rel="noopener norefferer"
+                            key={index}
+                            href={item.href}
+                          >
+                            <DownloadPlaystore />
+                          </a>
+                        );
+                      } else if (item.type === "web") {
+                        return (
+                          <a
+                            target="_blank"
+                            rel="noopener norefferer"
+                            key={index}
+                            href={item.href}
+                          >
+                            <VisitWeb />
+                          </a>
+                        );
+                      }
+                    })}
+                  </ProfileWrapper>
+                </ProfileDetail>
+              </ProfileList>
+            </ListWrapper>
             <ListWrapper>
               <p>Timeline</p>
               <ProfileList>

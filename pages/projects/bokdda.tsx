@@ -4,6 +4,7 @@ import { Divider, Section } from "@components/typography";
 import { NextPage } from "next";
 import thumbnail from "@media/hero_bokdda.png";
 import profile_wonjun from "@media/profile_wonjun.jpeg";
+import profile_byeonghun from "@media/profile_byeonghun.jpeg";
 
 const BokddaPage: NextPage = () => {
   return (
@@ -23,11 +24,17 @@ const BokddaPage: NextPage = () => {
             {
               name: "Beyonghun",
               role: "Product Strategy",
-              image: profile_wonjun,
+              image: profile_byeonghun,
             },
           ]}
           thumbnail={thumbnail}
           background={"#ffffff"}
+          product={[
+            {
+              type: "web",
+              href: "https://beomsoo.me/bokjiiiiii/#/",
+            },
+          ]}
         />
         <Divider />
         <Section></Section>
