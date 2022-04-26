@@ -13,7 +13,7 @@ interface ProjectHeader {
   profile: Array<{ name: string; role: string; image: any }>;
   thumbnail: any;
   background: string;
-  product: Array<{ type: "ios" | "aos" | "web"; href: string }>;
+  product?: Array<{ type: "ios" | "aos" | "web"; href: string }>;
 }
 
 const Header = styled.header`
@@ -147,51 +147,54 @@ export function ProjectHeader({
             <TitleImg>
               <Image src={thumbnail} layout="responsive" />
             </TitleImg>
-            <ListWrapper>
-              <p>Product</p>
-              <ProfileList>
-                <ProfileDetail>
-                  <ProfileWrapper>
-                    {product?.map((item, index) => {
-                      if (item.type === "ios") {
-                        return (
-                          <a
-                            target="_blank"
-                            rel="noopener norefferer"
-                            key={index}
-                            href={item.href}
-                          >
-                            <DownloadAppstore />
-                          </a>
-                        );
-                      } else if (item.type === "aos") {
-                        return (
-                          <a
-                            target="_blank"
-                            rel="noopener norefferer"
-                            key={index}
-                            href={item.href}
-                          >
-                            <DownloadPlaystore />
-                          </a>
-                        );
-                      } else if (item.type === "web") {
-                        return (
-                          <a
-                            target="_blank"
-                            rel="noopener norefferer"
-                            key={index}
-                            href={item.href}
-                          >
-                            <VisitWeb />
-                          </a>
-                        );
-                      }
-                    })}
-                  </ProfileWrapper>
-                </ProfileDetail>
-              </ProfileList>
-            </ListWrapper>
+            {product === undefined ? null : (
+              <ListWrapper>
+                <p>Product</p>
+                <ProfileList>
+                  <ProfileDetail>
+                    <ProfileWrapper>
+                      {product?.map((item, index) => {
+                        if (item.type === "ios") {
+                          return (
+                            <a
+                              target="_blank"
+                              rel="noopener norefferer"
+                              key={index}
+                              href={item.href}
+                            >
+                              <DownloadAppstore />
+                            </a>
+                          );
+                        } else if (item.type === "aos") {
+                          return (
+                            <a
+                              target="_blank"
+                              rel="noopener norefferer"
+                              key={index}
+                              href={item.href}
+                            >
+                              <DownloadPlaystore />
+                            </a>
+                          );
+                        } else if (item.type === "web") {
+                          return (
+                            <a
+                              target="_blank"
+                              rel="noopener norefferer"
+                              key={index}
+                              href={item.href}
+                            >
+                              <VisitWeb />
+                            </a>
+                          );
+                        }
+                      })}
+                    </ProfileWrapper>
+                  </ProfileDetail>
+                </ProfileList>
+              </ListWrapper>
+            )}
+
             <ListWrapper>
               <p>Timeline</p>
               <ProfileList>
