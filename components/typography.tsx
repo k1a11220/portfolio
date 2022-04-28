@@ -27,18 +27,23 @@ export const Divider = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 1.125rem;
   margin-top: 1rem;
   line-height: 1.5;
+  font-size: 1.125rem;
   color: #767e85;
 `;
 
 export const ImgContainer = styled.div`
   aspect-ratio: 16 / 9;
   background-color: #bcc5ce;
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
   border-radius: 10px;
+`;
+
+export const B = styled.b`
+  font-weight: 500;
+  color: #333d4b;
 `;
 
 export function Headline({ title, color, weight }: Headline) {
@@ -59,10 +64,19 @@ export function Headline({ title, color, weight }: Headline) {
 
 export function Ul({ list }: any) {
   return (
-    <ul>
+    <ul style={{ marginTop: "1rem" }}>
       {list.map((data: string, index: string) => (
-        <li key={index}>
-          <Paragraph>{data}</Paragraph>
+        <li
+          style={{
+            marginLeft: "1.25rem",
+            listStyle: "circle !important",
+            lineHeight: " 1.5",
+            fontSize: "1.125rem",
+            color: "#767e85",
+          }}
+          key={index}
+        >
+          {data}
         </li>
       ))}
     </ul>
