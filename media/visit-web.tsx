@@ -11,8 +11,8 @@ export function VisitWeb() {
           <rect width="120" height="40" />
         </clipPath>
       </defs>
-      <g id="webLogo" clip-path="url(#clip-webLogo)">
-        <g id="사각형_9" data-name="사각형 9" stroke="#a6a6a6" stroke-width="1">
+      <g id="webLogo" clipPath="url(#clip-webLogo)">
+        <g id="사각형_9" data-name="사각형 9" stroke="#a6a6a6" strokeWidth="1">
           <rect width="120" height="40" rx="7" stroke="none" />
           <rect x="0.5" y="0.5" width="119" height="39" rx="6.5" fill="none" />
         </g>
@@ -28,11 +28,11 @@ export function VisitWeb() {
           transform="translate(36 25)"
           fill="#fff"
           stroke="rgba(0,0,0,0)"
-          stroke-width="1"
-          font-size="13"
-          font-family="Pretendard-Medium, Pretendard"
-          font-weight="500"
-          letter-spacing="-0.012em"
+          strokeWidth="1"
+          fontSize="13"
+          fontFamily="Pretendard-Medium, Pretendard"
+          fontWeight="500"
+          letterSpacing="-0.012em"
         >
           <tspan x="0" y="0">
             Visit website

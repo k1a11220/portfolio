@@ -4,6 +4,7 @@ import { CustomHead } from "@components/custom-head";
 import { ProjectHeader } from "@components/project/project-header";
 import {
   Divider,
+  H2,
   H3,
   ImgContainer,
   Paragraph,
@@ -37,7 +38,7 @@ const ALDPage: NextPage = () => {
         />
         <Divider />
         <Section>
-          <H3>Overview</H3>
+          <H2>Overview</H2>
           <Paragraph>
             In the ALD process, wafer can't move to another space. Because
             wafers can be polluted by gas or particles. But if wafer can move to

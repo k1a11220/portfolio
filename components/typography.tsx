@@ -7,7 +7,13 @@ interface Headline {
   weight: number;
 }
 
+export const H2 = styled.h2`
+  font-size: 1.5rem;
+  font-weight: 600;
+`;
+
 export const H3 = styled.h3`
+  margin-top: 2rem;
   font-size: 1.375rem;
   font-weight: 500;
 `;
@@ -28,10 +34,11 @@ export const Paragraph = styled.p`
 `;
 
 export const ImgContainer = styled.div`
-  height: 300px;
-  background-color: #78899b;
+  aspect-ratio: 16 / 9;
+  background-color: #bcc5ce;
   margin-top: 3.5rem;
-  border-radius: 16px;
+  margin-bottom: 3.5rem;
+  border-radius: 10px;
 `;
 
 export function Headline({ title, color, weight }: Headline) {
@@ -47,5 +54,17 @@ export function Headline({ title, color, weight }: Headline) {
     >
       {title}
     </h2>
+  );
+}
+
+export function Ul({ list }: any) {
+  return (
+    <ul>
+      {list.map((data: string, index: string) => (
+        <li key={index}>
+          <Paragraph>{data}</Paragraph>
+        </li>
+      ))}
+    </ul>
   );
 }
