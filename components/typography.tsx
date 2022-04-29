@@ -30,12 +30,12 @@ export const Paragraph = styled.p`
   margin-top: 1rem;
   line-height: 1.5;
   font-size: 1.125rem;
-  color: #767e85;
+  color: var(--grey200);
 `;
 
 export const ImgContainer = styled.div`
   aspect-ratio: 16 / 9;
-  background-color: #bcc5ce;
+  background-color: var(--grey50);
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
   border-radius: 10px;
@@ -43,7 +43,7 @@ export const ImgContainer = styled.div`
 
 export const B = styled.b`
   font-weight: 500;
-  color: #333d4b;
+  color: var(--grey400);
 `;
 
 export function Headline({ title, color, weight }: Headline) {
@@ -72,7 +72,7 @@ export function Ul({ list }: any) {
             listStyle: "circle !important",
             lineHeight: " 1.5",
             fontSize: "1.125rem",
-            color: "#767e85",
+            color: "var(--grey200)",
           }}
           key={index}
         >

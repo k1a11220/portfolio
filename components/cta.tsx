@@ -13,17 +13,20 @@ const Button = styled.a<{ isPrimary: boolean }>`
   border-radius: 14px;
   border: none;
   font-size: 1rem;
-  background-color: ${(props) => (props.isPrimary ? "#2c82ff" : "#ffffff")};
-  border: 1px solid ${(props) => (props.isPrimary ? "#2c82ff" : "#EAEAEA")};
-  color: ${(props) => (props.isPrimary ? "#ffffff" : "#666666")};
+  background-color: ${(props) =>
+    props.isPrimary ? "var(--blue)" : "var(--white)"};
+  border: 1px solid
+    ${(props) => (props.isPrimary ? "var(--blue)" : "var(--grey100)")};
+  color: ${(props) => (props.isPrimary ? "var(--white)" : "var(--grey300)")};
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    color: ${(props) => (props.isPrimary ? "#2c82ff" : "#666666")};
-    border: 1px solid ${(props) => (props.isPrimary ? "#2c82ff" : "#000000")};
+    color: ${(props) => (props.isPrimary ? "var(--blue)" : "var(--grey300)")};
+    border: 1px solid
+      ${(props) => (props.isPrimary ? "var(--blue)" : "var(--grey500)")};
     background-color: #ffffff;
     transition: all 0.2s ease-in-out;
   }

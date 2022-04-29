@@ -13,7 +13,7 @@ const ProjectContent = styled.li`
   cursor: pointer;
   aspect-ratio: 16 / 10;
   border-radius: 16px;
-  background-color: #f2f4f6;
+  background-color: var(--grey50);
   overflow: hidden;
   position: relative; // for hover effect on image background color change
 
@@ -37,7 +37,7 @@ const ProjectFilter = styled.div`
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--greyOpacity600);
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;

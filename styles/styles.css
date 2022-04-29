@@ -1,0 +1,22 @@
+:root {
+  font-size: 100%;
+  --width: 1200px;
+  --min-width: 320px;
+  --post-width: 780px;
+  --nav-height: 120px;
+  --nav-collapse-height: 64px;
+  --footer-height: 180px;
+
+  --white: #fff;
+  --black: #000;
+  --blue: #2c82ff;
+  --grey50: #f2f6fa;
+  --grey100: #b0b8c1;
+  --grey200: #767e85;
+  --grey300: #3f4c54;
+  --grey400: #333d4b;
+  --grey500: #191f28;
+
+  --greyOpacity500: rgba(0, 27, 55, 0.1);
+  --greyOpacity600: rgba(23, 38, 54, 0.6);
+}

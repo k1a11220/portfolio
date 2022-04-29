@@ -12,9 +12,9 @@ const NavContainer: any = styled.nav`
   z-index: 50;
   user-select: none;
   border-bottom: ${(props: any) =>
-    props.padding ? "1px solid rgba(0,27,55,0.1)" : ""};
+    props.padding ? "1px solid var(--greyOpacity500)" : ""};
   background-color: ${(props: any) =>
-    props.padding ? "#ffffff" : "transparent"};
+    props.padding ? "var(--white)" : "transparent"};
   transition: background 0.3s ease-in-out;
 `;
 
@@ -73,7 +73,7 @@ const Item = styled.li`
 const Label: any = styled.button`
   border: none;
   padding: 12px 16px;
-  color: #767e85;
+  color: var(--grey200);
   font-weight: 300;
   font-size: 1rem;
   border-radius: 8px;
@@ -81,7 +81,7 @@ const Label: any = styled.button`
   background: transparent;
 
   &:hover {
-    background-color: #f2f6fa;
+    background-color: var(--grey50);
   }
 `;
 
@@ -131,7 +131,8 @@ export function Navigation() {
               <Item>
                 <Label
                   style={{
-                    color: router.pathname === "/about" ? "#3D444B" : null,
+                    color:
+                      router.pathname === "/about" ? "var(--grey400)" : null,
                   }}
                   onClick={() => router.push("/about")}
                 >

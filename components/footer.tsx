@@ -11,10 +11,10 @@ import {
 const Container = styled.footer`
   display: flex;
   justify-content: center;
-  background-color: #191f28;
+  background-color: var(--grey500);
   height: 180px;
   margin-top: 80px;
-  color: #b0b8c1;
+  color: var(--grey100);
 `;
 
 const Wrapper = styled.div`
@@ -37,11 +37,11 @@ const IconContainer = styled.ul`
   gap: 40px;
 
   & a {
-    color: #8b95a1;
+    color: var(--grey200);
   }
 
   & a:hover {
-    color: #3d444b;
+    color: var(--grey50);
   }
 `;
 

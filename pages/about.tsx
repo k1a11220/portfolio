@@ -24,7 +24,7 @@ const Header = styled.header`
   & h3 {
     font-size: 1.25rem;
     line-height: 1.5;
-    color: #767e85;
+    color: var(--grey200);
     margin-bottom: 1.5rem;
     font-weight: 300;
   }
@@ -49,7 +49,7 @@ const ImgContainer = styled.div`
 
 const Img = styled.div`
   aspect-ratio: 1;
-  background-color: #696969;
+  background-color: var(--grey50);
   border-radius: 8px;
   overflow: hidden;
 `;
@@ -169,7 +169,7 @@ const About: NextPage = () => {
         />
         <hr
           style={{
-            border: "1px solid #EAEAEA",
+            border: "1px solid var(--greyOpacity500)",
           }}
         />
         <ButtonContainer>

@@ -31,7 +31,7 @@ const Header = styled.header`
 
   & p {
     font-size: 1rem;
-    color: #767e85;
+    color: var(--grey200);
     line-height: 1.25;
   }
 `;
@@ -44,7 +44,7 @@ const HeaderBg = styled.div<{ background: string }>`
   background-color: ${({ background }) => background};
   overflow: visible;
   padding-bottom: 80px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--greyOpacity500);
 `;
 
 const TitleImg = styled.div`
@@ -73,8 +73,8 @@ const ProfileList = styled.div`
 const ProfileImg = styled.div`
   width: 48px;
   height: 48px;
-  background-color: #ffffff;
-  border: 1px solid #e6e6e6;
+  background-color: var(--white);
+  border: 1px solid var(--greyOpacity500);
   border-radius: 50%;
   margin-right: 0.75rem;
   overflow: hidden;
@@ -103,7 +103,7 @@ const ProfileDetail = styled.div`
   & p:first-of-type {
     margin-bottom: 4px;
     font-size: 1rem;
-    color: #333d4b;
+    color: var(--grey400);
   }
 
   & p:last-of-type {
