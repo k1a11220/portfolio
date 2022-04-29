@@ -21,6 +21,10 @@ const ProjectContent = styled.li`
     & img {
       transform: scale(1.03);
     }
+
+    & div {
+      opacity: 1;
+    }
   }
 
   & img {
@@ -31,48 +35,47 @@ const ProjectContent = styled.li`
 
 const ProjectFilter = styled.div`
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  border-radius: 16px;
   width: 100%;
-  height: 100%;
-  background: var(--greyOpacity600);
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  color: var(--grey500);
 
-  &:hover {
-    opacity: 1;
-  }
-
-  & div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 0.75rem;
-    color: #ffffff;
-    /* margin: 32px; */
+  & > div {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    background: var(--white);
+    margin: auto;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid var(--grey50);
+    margin: 24px 24px;
   }
 
   & h3 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
   }
 
   & p {
     font-size: 1rem;
+    color: var(--grey200);
   }
+`;
+
+const ProjectWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 `;
 
 export function Project({ title, description, thumbnail, link }: Project) {
   return (
     <ProjectContent>
       <Link href={link}>
-        <div>
+        <ProjectWrapper>
           <ProjectFilter>
             <div>
               <h3>{title}</h3>
@@ -80,7 +83,7 @@ export function Project({ title, description, thumbnail, link }: Project) {
             </div>
           </ProjectFilter>
           <Image src={thumbnail} layout="responsive"></Image>
-        </div>
+        </ProjectWrapper>
       </Link>
     </ProjectContent>
   );
