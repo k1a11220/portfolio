@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import Image from "next/image";
 
 interface Headline {
   title: string;
@@ -26,25 +27,32 @@ export const Divider = styled.div`
   height: 80px;
 `;
 
-export const Paragraph = styled.p`
+export const P = styled.p`
   margin-top: 1rem;
   line-height: 1.5;
   font-size: 1.125rem;
   color: var(--grey200);
 `;
 
-export const ImgContainer = styled.div`
-  aspect-ratio: 16 / 9;
-  background-color: var(--grey50);
+export const B = styled.b`
+  font-weight: 500;
+  color: var(--grey400);
+`;
+
+const ImgContainer = styled.div`
+  background: none;
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
   border-radius: 10px;
 `;
 
-export const B = styled.b`
-  font-weight: 500;
-  color: var(--grey400);
-`;
+export function StyledImage({ src }: { src: any }) {
+  return (
+    <ImgContainer>
+      <Image src={src} layout="responsive" />
+    </ImgContainer>
+  );
+}
 
 export function Headline({ title, color, weight }: Headline) {
   return (
