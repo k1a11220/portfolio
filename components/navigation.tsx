@@ -37,8 +37,8 @@ const NavWrapper = styled.div`
 const Logo = styled.button`
   border: none;
   padding: 0;
-  font-size: 0.75rem;
-  letter-spacing: 0.15rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
   font-weight: 500;
   cursor: pointer;
   background: transparent;
@@ -124,7 +124,7 @@ export function Navigation() {
           }}
         >
           <Link href={"/"}>
-            <Logo>BEOMSOO SON</Logo>
+            <Logo>손범수.</Logo>
           </Link>
           <ItemContainer>
             <ItemList style={{ display: "flex" }}>

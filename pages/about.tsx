@@ -5,10 +5,10 @@ import { InfoList } from "@components/about/infoList";
 import { CTA } from "@components/cta";
 import { CustomHead } from "@components/custom-head";
 
-import porfile_1 from "@media/profile_1.jpeg";
-import porfile_2 from "@media/profile_2.jpg";
-import porfile_3 from "@media/profile_3.jpg";
-import porfile_4 from "@media/profile_4.jpeg";
+import porfile_1 from "@media/profile/profile_1.jpeg";
+import porfile_2 from "@media/profile/profile_2.jpg";
+import porfile_3 from "@media/profile/profile_3.jpg";
+import porfile_4 from "@media/profile/profile_4.jpeg";
 
 const Header = styled.header`
   padding-bottom: 220px;
@@ -19,6 +19,7 @@ const Header = styled.header`
     line-height: 1.25;
     margin-top: 32px;
     margin-bottom: 12px;
+    font-weight: 500;
   }
 
   & h3 {
@@ -84,13 +85,13 @@ const About: NextPage = () => {
             <Image src={porfile_4} layout="responsive" />
           </Img>
         </ImgContainer>
-        <h1>Hello I'm Beomsoo Son</h1>
+        <h1>준비하시고... 쏘세요! 🚀</h1>
         <h3>
-          I’m a design engineer and a digital product designer. I enjoy digging
-          into the essence of users' problems and solving them. Regardless of
-          the shape of the product, I'm solving problems across software and
-          hardware. I pay attention to the relationship between the product and
-          the user. I dream of an awesome product being with people's lives.
+          안녕하세요, 손범수입니다. 디자인 엔지니어이자 디지털 프로덕트 디자이너
+          입니다. 문제의 본질을 파고들어 해결하는 걸 즐깁니다. 제품의 형태에
+          구애받지 않고 소프트웨어와 하드웨어 사이를 넘나들며 문제를 풀어가고
+          있습니다. 제품과 사용자의 관계에 주목하며, 멋진 서비스가 사람들의 삶과
+          함께하는 모습을 꿈꿉니다.
         </h3>
       </Header>
       <main>
@@ -98,24 +99,24 @@ const About: NextPage = () => {
           label={"Experience"}
           list={[
             {
-              title: "KOREAN NATIONAL POLICE AGENCY",
-              summary: "Auxiliary Police · 2021.8 ~ Present",
-              desc: "Improve auxiliary police onboarding experience.",
+              title: "대한민국 경찰청",
+              summary: "의무경찰 · 2021.8 ~ Present",
+              desc: "신임 의무경찰 온보딩 경험 개선 프로젝트.",
             },
             {
               title: "TNG",
               summary: "Design Engineer · 2020.1 ~ 2021.8",
-              desc: "Worked with KITECH, Samsung Display to optimize ALD Equipment. Involved in hardware design and user interface design of ALD equipment. Developed non-contact hydrogen compressor.",
+              desc: "한국생산기술연구원, 삼성디스플레이와 함께 ALD 장비를 개발했습니다. ALD 장비의 하드웨어 설계 및 사용자 인터페이스 설계에 참여했습니다. 비접촉 수소 압축기 프로토타입을 개발했습니다.",
             },
             {
               title: "BE THE LIGHT",
               summary: "Design Engineer · 2021.3 ~ 2021.8",
-              desc: "Designed Javara Light, a portable solar energy solution. BE THE LIGHT is social startup team, which was created with the goal of bringing light to Africa.",
+              desc: "아프리카에 빛을 전하자는 목표로 탄생한 소셜 스타트업인 BE THE LIGHT에서 휴대용 태양 에너지 솔루션인 Javara Light를 설계했습니다.",
             },
             {
               title: "May KING",
               summary: "Founder, Design Instructor · 2018.1 ~ 2019.12",
-              desc: "Found May KING, a non-profit educational organization that teaches product design and engineering. Created and operated product design and hardware engineering curriculum.",
+              desc: "제품 디자인 및 엔지니어링을 가르치는 비영리 교육 기관인 May KING을 설립했습니다. 제품 설계 및 하드웨어 엔지니어링 커리큘럼을 제작하여 운영했습니다.",
             },
           ]}
         />
@@ -159,7 +160,7 @@ const About: NextPage = () => {
             {
               title:
                 "전기클린룸 개발을 위한 일유체노즐 내부의 물 유동장 수치해석",
-              summary: "대한기계학회 2022 열공학부문 춘계학술대회 · ",
+              summary: "대한기계학회 2022 열공학부문 춘계학술대회",
               desc: "",
               isIcon: true,
               download:

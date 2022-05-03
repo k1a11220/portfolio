@@ -59,13 +59,13 @@ const Home: NextPage = () => {
         style={{ marginTop: "120px", paddingTop: "140px", maxWidth: "60%" }}
       >
         <Headline
-          title={"Hello I'm Beomsoo Son"}
+          title={"안녕하세요 손범수입니다."}
           color={"#333333"}
-          weight={400}
+          weight={500}
         />
         <Headline
           title={
-            "Design Engineer and Product Designer based in Suwon, South Korea focused on Design engineering and Digital product design."
+            "디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다. 지금은 군대갔습니다. ⛈"
           }
           color={"#7c7c7c"}
           weight={300}
