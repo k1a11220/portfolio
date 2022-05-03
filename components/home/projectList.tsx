@@ -1,10 +1,11 @@
 import styled from "@emotion/styled";
+import { ImageProps } from "next/image";
 import { Project } from "./project";
 
 interface Project {
   title: string;
   description: string;
-  thumbnail: string;
+  thumbnail: ImageProps;
   link: string;
 }
 

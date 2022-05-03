@@ -7,7 +7,7 @@ const ImgContainer = styled.div`
   margin-bottom: 1.875rem;
   align-self: center;
   width: 140%;
-  max-width: 96vw;
+  max-width: 100vw;
 `;
 
 const ImageWrapper = styled.div`

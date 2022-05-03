@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Image from "next/image";
-import { DownloadAppstore } from "@media/download-appstore";
-import { VisitWeb } from "@media/visit-web";
-import { DownloadPlaystore } from "@media/download-playstore";
+import Image, { ImageProps } from "next/image";
+import { DownloadAppstore } from "@media/common/download-appstore";
+import { VisitWeb } from "@media/common/visit-web";
+import { DownloadPlaystore } from "@media/common/download-playstore";
 
 interface ProjectHeader {
   title: string;
@@ -11,7 +11,7 @@ interface ProjectHeader {
   timeline: string;
   role: string;
   profile: Array<{ name: string; role: string; image: any }>;
-  thumbnail: any;
+  hero: ImageProps;
   background: string;
   product?: Array<{ type: "ios" | "aos" | "web"; href: string }>;
 }
@@ -117,7 +117,7 @@ export function ProjectHeader({
   timeline,
   role,
   profile,
-  thumbnail,
+  hero,
   background,
   product,
 }: ProjectHeader) {
@@ -145,7 +145,7 @@ export function ProjectHeader({
               <p>{description}</p>
             </div>
             <TitleImg>
-              <Image src={thumbnail} layout="responsive" />
+              <Image src={hero} layout="responsive" />
             </TitleImg>
             {product === undefined ? null : (
               <ListWrapper>

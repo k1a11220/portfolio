@@ -23,7 +23,7 @@ const NavWrapper = styled.div`
   padding: 0 48px;
   display: flex;
   height: 120px;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
   flex-basis: 100%;
   align-items: center;
   user-select: none;

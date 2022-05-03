@@ -2,15 +2,15 @@ import { CustomHead } from "@components/custom-head";
 import { ProjectHeader } from "@components/project/project-header";
 import { B, Divider, H2, H3, P, Section } from "@components/typography";
 import { NextPage } from "next";
-import thumbnail from "@media/hero_bokdda.png";
-import profile_wonjun from "@media/profile_wonjun.jpeg";
-import profile_byeonghun from "@media/profile_byeonghun.jpeg";
+import hero from "@media/bokdda/hero.png";
+import profile_wonjun from "@media/common/profile_wonjun.jpeg";
+import profile_byeonghun from "@media/common/profile_byeonghun.jpeg";
 import diagram from "@media/bokdda/diagram.png";
 import ui_1 from "@media/bokdda/ui-1.png";
 import ui_2 from "@media/bokdda/ui-2.png";
 import ui_3 from "@media/bokdda/ui-3.png";
 import test_1 from "@media/bokdda/test-1.png";
-import iphone from "@media/iphone.png";
+import iphone from "@media/common/iphone.png";
 import Image from "next/image";
 import StyledImage from "@components/project/styled-image";
 
@@ -35,7 +35,7 @@ const BokddaPage: NextPage = () => {
               image: profile_byeonghun,
             },
           ]}
-          thumbnail={thumbnail}
+          hero={hero}
           background={"#ffffff"}
           product={[
             {
