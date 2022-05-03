@@ -55,12 +55,13 @@ const ProjectFilter = styled.div`
 
   & h3 {
     font-size: 1.125rem;
-    margin-bottom: 0.5rem;
+
     font-weight: 500;
   }
 
   & p {
     font-size: 1rem;
+    margin-top: 0.5rem;
     color: var(--grey200);
   }
 `;
