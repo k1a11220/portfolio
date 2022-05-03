@@ -13,6 +13,7 @@ import test_1 from "@media/bokdda/test-1.png";
 import iphone from "@media/common/iphone.png";
 import Image from "next/image";
 import StyledImage from "@components/project/styled-image";
+import LinkPreview from "@components/link-preview";
 
 const BokddaPage: NextPage = () => {
   return (
@@ -119,8 +120,8 @@ const BokddaPage: NextPage = () => {
             빠른 프로덕트 개발을 위해 복지로 API를 활용해서 검색 서비스를
             제작했습니다. 생애주기, 대상특성, 욕구 총 3가지 기준을 바탕으로 복지
             검색을 할 수 있습니다. <br />
-            [볶다, 복지를 볶다.](https://beomsoo.me/bokjiiiiii/)
           </P>
+          <LinkPreview link="https://andrejgajdos.com/how-to-create-a-link-preview/" />
           <StyledImage src={ui_3} />
           <P>
             페이스북 광고를 집행하여 CAC를 기준으로 MVP를 평가했습니다. 예상과
