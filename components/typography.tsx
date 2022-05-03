@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "@emotion/styled";
 import Image from "next/image";
 
@@ -21,6 +21,8 @@ export const H3 = styled.h3`
 
 export const Section = styled.section`
   margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Divider = styled.div`
@@ -38,21 +40,6 @@ export const B = styled.b`
   font-weight: 500;
   color: var(--grey400);
 `;
-
-const ImgContainer = styled.div`
-  background: none;
-  margin-top: 1.875rem;
-  margin-bottom: 1.875rem;
-  border-radius: 10px;
-`;
-
-export function StyledImage({ src }: { src: any }) {
-  return (
-    <ImgContainer>
-      <Image src={src} layout="responsive" />
-    </ImgContainer>
-  );
-}
 
 export function Headline({ title, color, weight }: Headline) {
   return (

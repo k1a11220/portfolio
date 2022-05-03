@@ -1,6 +1,4 @@
 import styled from "@emotion/styled";
-import Image from "next/image";
-import Link from "next/link";
 import Thumbnail_ald from "@media/thumbnail_ald.jpg";
 import Thumbnail_bokdda from "@media/thumbnail_bokdda.png";
 import Thumbnail_goonin from "@media/thumbnail_goonin.png";
@@ -26,13 +24,13 @@ export function ProjectList() {
     <ProjectContainer>
       <Project
         title="Solift"
-        description="Lifestyle service for solider"
+        description="군 장병 혜택정보 제공 및 자기계발 서비스"
         thumbnail={Thumbnail_solift}
         link="/projects/solift"
       />
       <Project
-        title="Bokdda"
-        description="Provide welfare search service"
+        title="볶다"
+        description="복지 검색경험 개선 프로젝트"
         thumbnail={Thumbnail_bokdda}
         link="/projects/bokdda"
       />

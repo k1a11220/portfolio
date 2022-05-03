@@ -1,14 +1,6 @@
 import { CustomHead } from "@components/custom-head";
 import { ProjectHeader } from "@components/project/project-header";
-import {
-  B,
-  Divider,
-  H2,
-  H3,
-  StyledImage,
-  P,
-  Section,
-} from "@components/typography";
+import { B, Divider, H2, H3, P, Section } from "@components/typography";
 import { NextPage } from "next";
 import thumbnail from "@media/hero_bokdda.png";
 import profile_wonjun from "@media/profile_wonjun.jpeg";
@@ -19,6 +11,8 @@ import ui_2 from "@media/bokdda/ui-2.png";
 import ui_3 from "@media/bokdda/ui-3.png";
 import test_1 from "@media/bokdda/test-1.png";
 import iphone from "@media/iphone.png";
+import Image from "next/image";
+import StyledImage from "@components/project/styled-image";
 
 const BokddaPage: NextPage = () => {
   return (
@@ -170,7 +164,7 @@ const BokddaPage: NextPage = () => {
             }}
           >
             <div style={{ width: "358px", margin: "auto", zIndex: "1" }}>
-              <StyledImage src={iphone} />
+              <Image src={iphone} layout="responsive" />
             </div>
             <div
               style={{
