@@ -14,6 +14,10 @@ const Container = styled.a`
   padding: 12px;
 `;
 
+const ImgWrapper = styled.div`
+  height: 90px;
+`;
+
 const DetailWrapper = styled.div`
   padding-left: 1.25rem;
   display: inline-block;
@@ -25,7 +29,7 @@ const DetailWrapper = styled.div`
 `;
 
 const Thumbnail = styled.img`
-  height: 90px;
+  height: 100%;
 `;
 
 const Title = styled.li`
@@ -53,9 +57,9 @@ const LinkPreview = ({ link }: { link: string }) => {
   };
   return (
     <Container href={data?.url} target="_blank" rel="noopener norefferer">
-      <div>
+      <ImgWrapper>
         <Thumbnail src={data?.image} alt="link preview" />
-      </div>
+      </ImgWrapper>
       <DetailWrapper>
         <ul>
           <Title>

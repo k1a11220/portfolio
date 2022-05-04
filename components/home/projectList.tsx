@@ -24,8 +24,9 @@ const ProjectContainer = styled.ul`
 export function ProjectList({ list }: { list: Project[] }) {
   return (
     <ProjectContainer>
-      {list.map((project) => (
+      {list.map((project, index) => (
         <Project
+          key={index}
           title={project.title}
           description={project.description}
           thumbnail={project.thumbnail}

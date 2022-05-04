@@ -11,9 +11,9 @@ import ui_2 from "@media/bokdda/ui-2.png";
 import ui_3 from "@media/bokdda/ui-3.png";
 import test_1 from "@media/bokdda/test-1.png";
 import iphone from "@media/common/iphone.png";
-import Image from "next/image";
 import StyledImage from "@components/project/styled-image";
 import LinkPreview from "@components/link-preview";
+import { StyledVideo } from "@components/project/styled-video";
 
 const BokddaPage: NextPage = () => {
   return (
@@ -155,37 +155,14 @@ const BokddaPage: NextPage = () => {
             가능하다고 알렸습니다. 복지로 서비스와 비교했고, 복지 검색부터
             신청까지 걸린 시간과 중간 이탈률을 주요 지표로 가정했습니다.
           </P>
+          <P>
+            Hi-fi 프로토타입을 만든 뒤 사전 인터뷰어와 함께 유저테스트를
+            진행했습니다. 테스트의 정확도를 높이기 위해 실제로 복지 신청이
+            가능하다고 알렸습니다. 복지로 서비스와 비교했고, 복지 검색부터
+            신청까지 걸린 시간과 중간 이탈률을 주요 지표로 가정했습니다.
+          </P>
           <StyledImage src={test_1} />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              position: "relative",
-              justifyContent: "center",
-            }}
-          >
-            <div style={{ width: "358px", margin: "auto", zIndex: "1" }}>
-              <Image src={iphone} layout="responsive" />
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                width: "100%",
-                display: "flex",
-              }}
-            >
-              <video
-                // controls
-                autoPlay
-                loop
-                style={{ width: "200px", margin: "auto" }}
-                controlsList="hide"
-                muted={true}
-              >
-                <source src={"/prototype.mp4"} />
-              </video>
-            </div>
-          </div>
+          <StyledVideo video="/prototype.mp4" img={iphone} />
         </Section>
       </article>
     </>

@@ -50,6 +50,7 @@ export function Headline({ title, color, weight }: Headline) {
         lineHeight: "1.5",
         marginBottom: "1rem",
         fontWeight: `${weight}`,
+        wordBreak: "keep-all",
       }}
     >
       {title}

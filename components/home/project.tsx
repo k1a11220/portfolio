@@ -83,7 +83,9 @@ export function Project({ title, description, thumbnail, link }: Project) {
               <p>{description}</p>
             </div>
           </ProjectFilter>
-          <Image src={thumbnail} layout="responsive"></Image>
+          <div>
+            <Image src={thumbnail} priority={true} layout="responsive" />
+          </div>
         </ProjectWrapper>
       </Link>
     </ProjectContent>
