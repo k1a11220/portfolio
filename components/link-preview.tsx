@@ -47,7 +47,7 @@ const URL = styled(Desc)`
 `;
 
 const LinkPreview = ({ link }: { link: string }) => {
-  //   const { data } = useLink(link);
+  // const { data } = useLink(link);
   const data = {
     title: "볶다, 복지경험 개선 프로젝트",
     description: "Google is a search engine.",
