@@ -111,7 +111,7 @@ const About: NextPage = () => {
             {
               title: "BE THE LIGHT",
               summary: "Design Engineer · 2021.3 ~ 2021.8",
-              desc: "아프리카에 빛을 전하자는 목표로 탄생한 소셜 스타트업인 BE THE LIGHT에서 휴대용 태양 에너지 솔루션인 Javara Light를 설계했습니다.",
+              desc: "아프리카에 빛을 전하자는 목표로 탄생한 소셜 스타트업인 BE THE LIGHT에서 휴대용 태양광 에너지 솔루션인 JAVALIGHT를 설계했습니다.",
             },
             {
               title: "May KING",

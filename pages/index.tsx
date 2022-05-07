@@ -8,11 +8,12 @@ import Thumbnail_election from "@media/election/thumbnail.png";
 import Thumbnail_ald from "@media/ald/thumbnail.jpg";
 import Thumbnail_hydro from "@media/hydro/thumbnail.png";
 import Thumbnail_javara from "@media/javara/thumbnail.png";
+import styled from "@emotion/styled";
 
 const Projects = [
   {
     title: "Solift",
-    description: "군 장병 혜택정보 제공 및 자기계발 서비스",
+    description: "군 장병 혜택정보 및 자기계발 플랫폼",
     thumbnail: Thumbnail_solift,
     link: "/projects/solift",
   },
@@ -23,14 +24,14 @@ const Projects = [
     link: "/projects/bokdda",
   },
   {
-    title: "2022 election",
-    description: "입대 전 각종 군 정보 제공 서비스",
+    title: "우리의 선택, 우리의 미래",
+    description: "20대 대선 주요후보 정보 제공 서비스",
     thumbnail: Thumbnail_election,
     link: "/projects/",
   },
   {
     title: "ALD Equipments",
-    description: "Develop optimized ALD equipment",
+    description: "ALD 장비 연구개발 프로젝트",
     thumbnail: Thumbnail_ald,
     link: "/projects/ald",
   },
@@ -41,12 +42,22 @@ const Projects = [
     link: "/projects/hydro",
   },
   {
-    title: "Javara Light",
-    description: "Small energy solution for Africa",
+    title: "JAVALIGHT",
+    description: "지속 가능한 소형 에너지 솔루션",
     thumbnail: Thumbnail_javara,
     link: "/projects/javara",
   },
 ];
+
+const Header = styled.header`
+  margin-top: var(--nav-height);
+  padding-top: 120px;
+  max-width: 60%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
 
 const Home: NextPage = () => {
   return (
@@ -55,9 +66,7 @@ const Home: NextPage = () => {
         title="손범수 - 디자인 엔지니어 & 프로덕트 디자이너"
         description="디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다."
       />
-      <header
-        style={{ marginTop: "120px", paddingTop: "140px", maxWidth: "60%" }}
-      >
+      <Header>
         <Headline
           title={"안녕하세요 손범수입니다."}
           color={"#333333"}
@@ -70,7 +79,7 @@ const Home: NextPage = () => {
           color={"#7c7c7c"}
           weight={300}
         />
-      </header>
+      </Header>
       <main style={{ marginTop: "140px" }}>
         <ProjectList list={Projects} />
       </main>
