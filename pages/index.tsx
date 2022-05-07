@@ -13,7 +13,7 @@ import styled from "@emotion/styled";
 const Projects = [
   {
     title: "Solift",
-    description: "군 장병 혜택정보 및 자기계발 플랫폼",
+    description: "군 장병 혜택정보 제공 및 자기계발 플랫폼",
     thumbnail: Thumbnail_solift,
     link: "/projects/solift",
   },

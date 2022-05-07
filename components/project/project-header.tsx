@@ -10,7 +10,7 @@ interface ProjectHeader {
   description: string;
   timeline: string;
   role: string;
-  profile: Array<{ name: string; role: string; image: any }>;
+  profile?: Array<{ name: string; role: string; image: any }>;
   hero: ImageProps;
   background: string;
   product?: Array<{ type: "ios" | "aos" | "web"; href: string }>;
@@ -211,22 +211,24 @@ export function ProjectHeader({
                 </ProfileWrapper>
               </ProfileList>
             </ListWrapper>
-            <ListWrapper>
-              <p>Team</p>
-              <ProfileList>
-                {profile.map((item, index) => (
-                  <ProfileWrapper key={index}>
-                    <ProfileImg>
-                      <Image src={item.image} layout="responsive" />
-                    </ProfileImg>
-                    <ProfileDetail>
-                      <p>{item.name}</p>
-                      <p>{item.role}</p>
-                    </ProfileDetail>
-                  </ProfileWrapper>
-                ))}
-              </ProfileList>
-            </ListWrapper>
+            {profile === undefined ? null : (
+              <ListWrapper>
+                <p>Team</p>
+                <ProfileList>
+                  {profile.map((item, index) => (
+                    <ProfileWrapper key={index}>
+                      <ProfileImg>
+                        <Image src={item.image} layout="responsive" />
+                      </ProfileImg>
+                      <ProfileDetail>
+                        <p>{item.name}</p>
+                        <p>{item.role}</p>
+                      </ProfileDetail>
+                    </ProfileWrapper>
+                  ))}
+                </ProfileList>
+              </ListWrapper>
+            )}
           </div>
         </div>
       </HeaderBg>
