@@ -22,19 +22,23 @@ const ALDPage: NextPage = () => {
   return (
     <>
       <CustomHead
-        title="ALD Equipments develop project"
-        description="How we optimized ALD process through rotating vacuum chamber from KITECH and SDC"
+        title="ALD 장비 연구개발 프로젝트"
+        description="ALD 공정을 최적화하기 위해 회전 챔버를 어떻게 구현했는지 알아봅니다."
       />
       <article>
         <ProjectHeader
-          title="ALD Equipments develop project"
-          description="How we optimized ALD process through rotating vacuum chamber from KITECH and SDC"
+          title="ALD 장비 연구개발 프로젝트"
+          description="ALD 공정을 최적화하기 위해 회전 챔버를 어떻게 구현했는지 알아봅니다."
           timeline="Dec 2018 - Jan 2019"
           role="Design Engineering & Research"
           profile={[
             { name: "TNG", role: "Design Engineering", image: tngLogo },
-            { name: "KITECH", role: "Research, Test", image: kitechLogo },
-            { name: "Samsung Display", role: "Research", image: samsungLogo },
+            {
+              name: "한국생산기술연구원",
+              role: "Research, Test",
+              image: kitechLogo,
+            },
+            { name: "삼성디스플레이", role: "Research", image: samsungLogo },
           ]}
           hero={hero}
           background={"#f7fafc"}
