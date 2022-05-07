@@ -6,10 +6,10 @@ import { Divider } from "@components/typography";
 import hero from "@media/solift/thumbnail.png";
 import ComingSoon from "@components/project/coming-soon";
 
-const SoliftPage: NextPage = () => {
+const JavalightPage: NextPage = () => {
   return (
     <>
-      <CustomHead title="Solift" description="" />
+      <CustomHead title="자바라이트" description="" />
       <article>
         {/* <ProjectHeader
           title="Solift, 군 장병 자기계발 플랫폼"
@@ -25,4 +25,4 @@ const SoliftPage: NextPage = () => {
   );
 };
 
-export default SoliftPage;
+export default JavalightPage;

@@ -42,10 +42,10 @@ const Projects = [
     link: "/projects/hydro",
   },
   {
-    title: "JAVALIGHT",
+    title: "자바라이트",
     description: "Design Engineering, Reseach, Rapid Prototyping",
     thumbnail: Thumbnail_javara,
-    link: "/projects/javara",
+    link: "/projects/javalight",
   },
 ];
 
