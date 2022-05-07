@@ -67,7 +67,7 @@ const About: NextPage = () => {
   return (
     <>
       <CustomHead
-        title="Beomsoo Son - About me"
+        title="손범수 - About me"
         description="Beomsoo Son's portfolio. Product designer, Design Engineer"
       />
       <Header>
@@ -85,13 +85,13 @@ const About: NextPage = () => {
             <Image src={porfile_4} layout="responsive" />
           </Img>
         </ImgContainer>
-        <h1>준비하시고... 쏘세요! 🚀</h1>
+        <h1>안녕하세요 손범수입니다. 🚀</h1>
         <h3>
-          안녕하세요, 손범수입니다. 디자인 엔지니어이자 디지털 프로덕트 디자이너
-          입니다. 문제의 본질을 파고들어 해결하는 걸 즐깁니다. 제품의 형태에
-          구애받지 않고 소프트웨어와 하드웨어 사이를 넘나들며 문제를 풀어가고
-          있습니다. 제품과 사용자의 관계에 주목하며, 멋진 서비스가 사람들의 삶과
-          함께하는 모습을 꿈꿉니다.
+          디자인 엔지니어이자 디지털 프로덕트 디자이너 입니다. 문제의 본질을
+          파고들어 해결하는 걸 즐깁니다. 제품의 형태에 구애받지 않고
+          소프트웨어와 하드웨어 사이를 넘나들며 문제를 풀어가고 있습니다. 제품과
+          사용자의 관계에 주목하며, 멋진 서비스가 사람들의 삶과 함께하는 모습을
+          꿈꿉니다.
         </h3>
       </Header>
       <main>

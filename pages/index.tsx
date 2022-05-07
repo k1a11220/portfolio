@@ -52,8 +52,8 @@ const Home: NextPage = () => {
   return (
     <>
       <CustomHead
-        title="Beomsoo Son - Design Engineer & Product Designer"
-        description="Beomsoo Son's portfolio. Product designer, Design Engineer"
+        title="손범수 - 디자인 엔지니어 & 프로덕트 디자이너"
+        description="디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다."
       />
       <header
         style={{ marginTop: "120px", paddingTop: "140px", maxWidth: "60%" }}
