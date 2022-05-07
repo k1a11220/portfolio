@@ -16,6 +16,7 @@ import A5 from "@media/ald/a5.png";
 import A6 from "@media/ald/a6.jpeg";
 import A7 from "@media/ald/a7.jpeg";
 import A8 from "@media/ald/a8.jpeg";
+import LinkCard from "@components/link-card";
 
 const ALDPage: NextPage = () => {
   return (
@@ -72,8 +73,8 @@ const ALDPage: NextPage = () => {
             <B>둘째, 회전 과정에서 진공을 일정하게 유지</B>
             <br />
             <br />
-            기존 장비에서 구현한 사례가 없다보니 적절한 솔루션을 직접
-            연구했습니다.
+            기존 장비에서 구현한 사례가 없다보니 적절한 솔루션을 직접 찾아야
+            했습니다.
           </P>
         </Section>
         <Section>
@@ -97,8 +98,8 @@ const ALDPage: NextPage = () => {
             연결됩니다.
             <br />
             <br />
-            그래서 2가지 기준을 가지고 오링을 대체할 수 있는 솔루션을
-            연구했습니다.
+            그래서 2가지 기준을 가지고 오링을 대체할 수 있는 솔루션을 찾아야
+            했습니다.
             <br />
             <br />
             <B>① 어떠한 파티클도 만들어내지 않을 것</B>
@@ -160,6 +161,32 @@ const ALDPage: NextPage = () => {
             다른 방식으로 문제를 해결해야 했습니다. 이후 약 8개월의 후속 연구
             끝에 전자석을 사용한 회전 챔버를 새롭게 설계했습니다.
           </P>
+        </Section>
+        <Section>
+          <LinkCard
+            data={{
+              title: "원자층 복합 증착 챔버 (Atomic layer deposition chamber)",
+              description: "특허출원, 한국생산기술연구원 · 10-2021-009228",
+              url: "https://drive.google.com/file/d/1rQBLTZFnai_l8u99YKmbyzYq6n96Pvhw/view?usp=sharing",
+            }}
+          />
+          <LinkCard
+            data={{
+              title:
+                "원자층 복합 증착 장치 (Atomic layer deposition apparatus)",
+              description: "특허출원, 한국생산기술연구원 · 10-2021-0157694",
+              url: "https://drive.google.com/file/d/1nkY36Mrk5nwd21ji3nZB43bU_hGDTvPV/view?usp=sharing",
+            }}
+          />
+          <LinkCard
+            data={{
+              title:
+                "지속가능한 ALD 공정챔버 개발을 위한 공정갭에 따른 가스유동 평가",
+              description:
+                "논문발표, 제 29회 한국반도체학술대회 · D_0041 / TP1-085",
+              url: "ttps://drive.google.com/file/d/1oF_pKLJUzYGfqvyuiFWvCP3-YQFqZBkA/view?usp=sharing",
+            }}
+          />
         </Section>
       </article>
     </>
