@@ -19,7 +19,7 @@ const SoliftPage: NextPage = () => {
           hero={hero}
           background={"#F4FAFF"}
         /> */}
-        <ComingSoon />
+        <ComingSoon type="coming" />
       </article>
     </>
   );

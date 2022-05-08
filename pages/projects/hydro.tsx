@@ -19,7 +19,7 @@ const ElectionPage: NextPage = () => {
           hero={hero}
           background={"#F4FAFF"}
         /> */}
-        <ComingSoon />
+        <ComingSoon type="nda" />
       </article>
     </>
   );

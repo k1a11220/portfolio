@@ -19,7 +19,7 @@ const JavalightPage: NextPage = () => {
           hero={hero}
           background={"#F4FAFF"}
         /> */}
-        <ComingSoon />
+        <ComingSoon type="coming" />
       </article>
     </>
   );

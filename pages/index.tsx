@@ -13,37 +13,37 @@ import styled from "@emotion/styled";
 const Projects = [
   {
     title: "Solift",
-    description: "Product Design, Full stack development",
+    description: "프로덕트 디자인, 풀스택 개발",
     thumbnail: Thumbnail_solift,
     link: "/projects/solift",
   },
   {
     title: "볶다",
-    description: "Product Design, UX Research, MVP",
+    description: "프로덕트 디자인, UX 리서치, MVP",
     thumbnail: Thumbnail_bokdda,
     link: "/projects/bokdda",
   },
   {
     title: "우리의 선택, 우리의 미래",
-    description: "Product Design, Full stack development",
+    description: "프로덕트 디자인, 풀스택 개발",
     thumbnail: Thumbnail_election,
     link: "/projects/election",
   },
   {
     title: "ALD Equipments",
-    description: "Design Engineering, Reseach, Patent",
+    description: "디자인 엔지니어링, 연구개발",
     thumbnail: Thumbnail_ald,
     link: "/projects/ald",
   },
   {
     title: "Hydrogen Compressor",
-    description: "Design Engineering, Reseach",
+    description: "디자인 엔지니어링, 연구개발",
     thumbnail: Thumbnail_hydro,
     link: "/projects/hydro",
   },
   {
     title: "자바라이트",
-    description: "Design Engineering, Reseach, Rapid Prototyping",
+    description: "디자인 엔지니어링, 연구개발, 프로토타이핑",
     thumbnail: Thumbnail_javara,
     link: "/projects/javalight",
   },
