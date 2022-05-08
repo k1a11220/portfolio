@@ -9,7 +9,7 @@ interface CTAType {
 }
 
 const Button = styled.a<{ isPrimary: boolean }>`
-  padding: 14px 24px;
+  padding: 12px 24px;
   border-radius: 14px;
   border: none;
   font-size: 1rem;

@@ -24,6 +24,10 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 0 48px;
 
+  & span {
+    color: var(--grey200);
+  }
+
   @media (max-width: 768px) {
     justify-content: center;
     gap: 32px;
@@ -37,7 +41,7 @@ const IconContainer = styled.ul`
   gap: 40px;
 
   & a {
-    color: var(--grey200);
+    color: var(--grey300);
   }
 
   & a:hover {

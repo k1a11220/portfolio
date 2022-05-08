@@ -73,7 +73,7 @@ const Item = styled.li`
 const Label: any = styled.button`
   border: none;
   padding: 12px 16px;
-  color: var(--grey200);
+  color: var(--grey300);
   font-weight: 300;
   font-size: 1rem;
   border-radius: 8px;
@@ -132,7 +132,7 @@ export function Navigation() {
                 <Label
                   style={{
                     color:
-                      router.pathname === "/about" ? "var(--grey400)" : null,
+                      router.pathname === "/about" ? "var(--grey300)" : null,
                   }}
                   onClick={() => router.push("/about")}
                 >
@@ -140,7 +140,15 @@ export function Navigation() {
                 </Label>
               </Item>
               <Item>
-                <Label>Contact</Label>
+                <Label
+                  style={{
+                    color:
+                      router.pathname === "/bside" ? "var(--grey300)" : null,
+                  }}
+                  onClick={() => router.push("/bside")}
+                >
+                  B-side
+                </Label>
               </Item>
             </ItemList>
           </ItemContainer>

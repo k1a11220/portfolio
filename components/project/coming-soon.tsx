@@ -96,7 +96,7 @@ function ComingSoon({ type }: { type: "coming" | "nda" }) {
     <Container>
       <h1>
         {type === "coming"
-          ? "준비중이에요 ..."
+          ? "준비중이에요 🛰"
           : type === "nda"
           ? "기밀유지 기간이에요"
           : null}
