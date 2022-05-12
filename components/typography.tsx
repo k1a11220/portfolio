@@ -8,15 +8,36 @@ interface Headline {
   weight: number;
 }
 
+export const H1 = styled.h1`
+  font-size: 2rem;
+  font-weight: 600;
+  word-break: keep-all;
+`;
+
 export const H2 = styled.h2`
   font-size: 1.5rem;
   font-weight: 600;
+  word-break: keep-all;
 `;
 
 export const H3 = styled.h3`
   margin-top: 2rem;
   font-size: 1.375rem;
   font-weight: 500;
+  word-break: keep-all;
+`;
+
+export const P = styled.p`
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: var(--grey200);
+  word-break: keep-all;
+`;
+
+export const B = styled.b`
+  font-weight: 500;
+  color: var(--grey400);
 `;
 
 export const Section = styled.section`
@@ -27,18 +48,6 @@ export const Section = styled.section`
 
 export const Divider = styled.div`
   height: 80px;
-`;
-
-export const P = styled.p`
-  margin-top: 1rem;
-  line-height: 1.5;
-  font-size: 1.125rem;
-  color: var(--grey200);
-`;
-
-export const B = styled.b`
-  font-weight: 500;
-  color: var(--grey400);
 `;
 
 export function Headline({ title, color, weight }: Headline) {
@@ -65,7 +74,7 @@ export function Ul({ list }: any) {
         <li
           style={{
             marginLeft: "1.25rem",
-            listStyle: "circle !important",
+            listStyle: "circle",
             lineHeight: " 1.5",
             fontSize: "1.125rem",
             color: "var(--grey200)",

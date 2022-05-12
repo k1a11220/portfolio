@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { CustomHead } from "@components/custom-head";
-import { Headline } from "@components/typography";
-import { ProjectList } from "@components/home/projectList";
+import { B, H1, H3, Headline, P } from "@components/typography";
+import { CardLgList } from "@components/card-lg-list";
 import Thumbnail_solift from "@media/solift/thumbnail.png";
 import Thumbnail_bokdda from "@media/bokdda/thumbnail.png";
 import Thumbnail_election from "@media/election/thumbnail.png";
@@ -51,7 +51,7 @@ const Projects = [
 
 const Header = styled.header`
   margin-top: var(--nav-height);
-  padding-top: 120px;
+  padding-top: calc(120px - 22px);
   max-width: 60%;
 
   @media (max-width: 768px) {
@@ -67,21 +67,14 @@ const Home: NextPage = () => {
         description="디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다."
       />
       <Header>
-        <Headline
-          title={"안녕하세요 손범수입니다."}
-          color={"#333333"}
-          weight={500}
-        />
-        <Headline
-          title={
-            "디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다. 지금은 군대갔습니다. ⛈"
-          }
-          color={"#7c7c7c"}
-          weight={300}
-        />
+        <H3>안녕하세요 손범수입니다.</H3>
+        <P>
+          디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를
+          푸는걸 좋아합니다. 지금은 <B>@군대</B> 갔습니다. ⛈
+        </P>
       </Header>
       <main style={{ marginTop: "140px" }}>
-        <ProjectList list={Projects} />
+        <CardLgList list={Projects} />
       </main>
     </>
   );

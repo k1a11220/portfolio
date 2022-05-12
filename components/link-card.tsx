@@ -21,20 +21,21 @@ const Container = styled.a`
 
 const DetailWrapper = styled.div`
   display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 80%;
   line-height: 1.25;
 `;
 
 const Title = styled.li`
-  color: var(--grey500);
   margin-bottom: 4px;
+  & p {
+    color: var(--grey600);
+    font-weight: 500;
+  }
 `;
 
 const Desc = styled.li`
-  color: var(--grey200);
+  & p {
+    color: var(--grey200);
+  }
 `;
 
 const LinkCard = ({ data }: { data: Data }) => {

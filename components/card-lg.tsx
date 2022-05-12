@@ -2,14 +2,14 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Project {
+export interface Card {
   title: string;
   description: string;
   thumbnail: any;
   link: string;
 }
 
-const ProjectContent = styled.li`
+const CardContent = styled.li`
   cursor: pointer;
   aspect-ratio: 16 / 10;
   border-radius: 16px;
@@ -33,7 +33,7 @@ const ProjectContent = styled.li`
   }
 `;
 
-const ProjectFilter = styled.div`
+const CardFilter = styled.div`
   position: absolute;
   border-radius: 16px;
   width: 100%;
@@ -66,28 +66,28 @@ const ProjectFilter = styled.div`
   }
 `;
 
-const ProjectWrapper = styled.div`
+const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 `;
 
-export function Project({ title, description, thumbnail, link }: Project) {
+export function CardLg({ title, description, thumbnail, link }: Card) {
   return (
-    <ProjectContent>
+    <CardContent>
       <Link href={link}>
-        <ProjectWrapper>
-          <ProjectFilter>
+        <CardWrapper>
+          <CardFilter>
             <div>
               <h3>{title}</h3>
               <p>{description}</p>
             </div>
-          </ProjectFilter>
+          </CardFilter>
           <div>
             <Image src={thumbnail} priority={true} layout="responsive" />
           </div>
-        </ProjectWrapper>
+        </CardWrapper>
       </Link>
-    </ProjectContent>
+    </CardContent>
   );
 }

@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { ImageProps } from "next/image";
-import { Project } from "./project";
+import { CardLg } from "./card-lg";
 
-interface Project {
+export interface Project {
   title: string;
   description: string;
   thumbnail: ImageProps;
@@ -21,11 +21,11 @@ const ProjectContainer = styled.ul`
   }
 `;
 
-export function ProjectList({ list }: { list: Project[] }) {
+export function CardLgList({ list }: { list: Project[] }) {
   return (
     <ProjectContainer>
       {list.map((project, index) => (
-        <Project
+        <CardLg
           key={index}
           title={project.title}
           description={project.description}

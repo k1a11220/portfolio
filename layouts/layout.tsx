@@ -19,7 +19,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Navigation />
       <div
         style={{
-          maxWidth: router.pathname === "/" ? "1140px" : "780px",
+          maxWidth:
+            router.pathname === "/"
+              ? "1140px"
+              : router.pathname === "/bside"
+              ? "1140px"
+              : "780px",
           width: "100%",
           height: "100%",
           margin: "auto",

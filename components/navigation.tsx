@@ -56,7 +56,7 @@ const ItemList = styled.ul`
   margin: 0 0 0 auto;
   z-index: 10;
   list-style: none;
-  gap: 10px;
+  gap: 8px;
 
   @media (max-width: 768px) {
     gap: 0;
@@ -132,24 +132,29 @@ export function Navigation() {
                 <Label
                   style={{
                     color:
-                      router.pathname === "/about" ? "var(--grey300)" : null,
+                      router.pathname === "/about" ? "var(--grey500)" : null,
+                    fontWeight: router.pathname === "/about" ? "400" : null,
                   }}
                   onClick={() => router.push("/about")}
                 >
-                  About me
+                  소개
                 </Label>
               </Item>
               <Item>
                 <Label
                   style={{
                     color:
-                      router.pathname === "/bside" ? "var(--grey300)" : null,
+                      router.pathname === "/side" ? "var(--grey500)" : null,
+                    fontWeight: router.pathname === "/side" ? "400" : null,
                   }}
-                  onClick={() => router.push("/bside")}
+                  onClick={() => router.push("/side")}
                 >
-                  B-side
+                  사이드 프로젝트
                 </Label>
               </Item>
+              {/* <Item>
+                <Label>Contact</Label>
+              </Item> */}
             </ItemList>
           </ItemContainer>
         </NavWrapper>

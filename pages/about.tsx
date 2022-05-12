@@ -15,11 +15,11 @@ const Header = styled.header`
   padding-top: 120px;
 
   & h1 {
-    font-size: 1.5rem;
-    line-height: 1.25;
+    font-size: 2rem;
+    line-height: 1.3;
     margin-top: 32px;
-    margin-bottom: 12px;
-    font-weight: 500;
+    margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   & h3 {
@@ -85,13 +85,17 @@ const About: NextPage = () => {
             <Image src={porfile_4} layout="responsive" />
           </Img>
         </ImgContainer>
-        <h1>안녕하세요 손범수입니다. 🚀</h1>
+        <h1>
+          도전, 설렘, 가슴 뛰는 삶
+          <br />
+          그리고 이야기
+        </h1>
         <h3>
-          디자인 엔지니어이자 디지털 프로덕트 디자이너 입니다. 문제의 본질을
-          파고들어 해결하는 걸 즐깁니다. 제품의 형태에 구애받지 않고
-          소프트웨어와 하드웨어 사이를 넘나들며 문제를 풀어가고 있습니다. 제품과
-          사용자의 관계에 주목하며, 멋진 서비스가 사람들의 삶과 함께하는 모습을
-          꿈꿉니다.
+          안녕하세요, 손범수입니다. 디자인 엔지니어이자 디지털 프로덕트 디자이너
+          입니다. 도전적인 팀원들과 함께 사용자 관점에서 문제를 해결하는 걸
+          좋아합니다. 제품의 형태에 구애받지 않고 소프트웨어와 하드웨어 사이를
+          넘나들며 문제를 풀어가고 있습니다. 제품과 사용자의 관계에 주목하며,
+          멋진 서비스가 사람들의 삶과 함께하는 모습을 꿈꿉니다.
         </h3>
       </Header>
       <main>
@@ -106,7 +110,7 @@ const About: NextPage = () => {
             {
               title: "TNG",
               summary: "Design Engineer · 2020.1 ~ 2021.8",
-              desc: "한국생산기술연구원, 삼성디스플레이와 함께 ALD 장비를 개발했습니다. ALD 장비의 하드웨어 설계 및 사용자 인터페이스 설계에 참여했습니다. 비접촉 수소 압축기 프로토타입을 개발했습니다.",
+              desc: "한국생산기술연구원, 삼성디스플레이와 함께 ALD 장비를 만들었습니다. ALD 장비의 하드웨어 설계 및 사용자 인터페이스 설계에 참여했습니다. 비접촉 수소 압축기 프로토타입을 개발했습니다.",
             },
             {
               title: "BE THE LIGHT",
