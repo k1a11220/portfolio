@@ -1,11 +1,14 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-import Link from "next/link";
 import { Card } from "./card-lg";
 
 interface CardWithSubtitle extends Card {
   subtitle?: string;
 }
+
+const Container = styled.a`
+  text-decoration: none;
+`;
 
 const CardContent = styled.div`
   cursor: pointer;
@@ -62,7 +65,7 @@ export function CardMd({
   link,
 }: CardWithSubtitle) {
   return (
-    <Link href={link}>
+    <Container target="_blank" rel="noopener norefferer" href={link}>
       <CardContent>
         <>
           <ImgContainer>
@@ -75,6 +78,6 @@ export function CardMd({
           </Info>
         </>
       </CardContent>
-    </Link>
+    </Container>
   );
 }

@@ -16,14 +16,14 @@ const Projects = [
     description:
       "경기 꿈의학교 사업을 통해 디자인, 설계 교육 커리큘럼을 기획하고 운영했습니다.",
     thumbnail: Thumbnail_solift,
-    link: "/projects/solift",
+    link: "https://www.youtube.com/watch?v=Q3_Rsd0PUmA",
   },
   {
     title: "우리의 선택, 우리의 미래",
     subtitle: "2022",
     description: "프로덕트 디자인, UX 리서치, MVP",
     thumbnail: Thumbnail_bokdda,
-    link: "/projects/bokddaa",
+    link: "https://www.2022-election.com",
   },
   {
     title: "군복무 가이드",
@@ -31,21 +31,21 @@ const Projects = [
     description:
       "입대 일주일 전 군복무자들에게 도움되는 정보를 정리한 서비스를 빠르게 만들었습니다.",
     thumbnail: Thumbnail_election,
-    link: "/projects/electiona",
+    link: "https://www.goonin.kr",
   },
   {
     title: "Padintosh",
     subtitle: "2021",
     description: "레트로 감성을 자극하는 아이패드 스탠드입니다.",
     thumbnail: Thumbnail_ald,
-    link: "/projects/alda",
+    link: "https://www.behance.net/gallery/109584649/Padintosh",
   },
   {
     title: "Toothbrush",
     subtitle: "2020",
     description: "재사용 가능한 칫솔모를 가진 칫솔입니다.",
     thumbnail: Thumbnail_hydro,
-    link: "/projects/hydroa",
+    link: "https://www.behance.net/gallery/102975555/Toothbrush",
   },
 ];
 
