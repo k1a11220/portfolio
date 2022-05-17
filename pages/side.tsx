@@ -4,7 +4,7 @@ import { H1, P } from "@components/typography";
 import styled from "@emotion/styled";
 import { CardMdList } from "@components/card-md-list";
 import Thumbnail_m1 from "@media/mayking/thumbnail.jpg";
-import Thumbnail_election from "@media/election/thumbnail.png";
+import Thumbnail_daily from "@media/dailyui/thumbnail.png";
 import Thumbnail_toothbrush from "@media/toothbrush/thumbnail.png";
 import Thumbnail_padintosh from "@media/padintosh/thumbnail.png";
 import Thumbnail_goonin from "@media/goonin/thumbnail-2.png";
@@ -25,6 +25,13 @@ const Projects = [
       "입대 일주일 전 군복무자들에게 도움되는 정보를 정리한 서비스를 빠르게 만들었습니다.",
     thumbnail: Thumbnail_goonin,
     link: "https://www.goonin.kr",
+  },
+  {
+    title: "Daily UI",
+    subtitle: "2022",
+    description: "Become a Better Designer in 100 Days.",
+    thumbnail: Thumbnail_daily,
+    link: "https://www.instagram.com/ui_stuff/",
   },
   {
     title: "Padintosh",
@@ -60,11 +67,8 @@ const Bside: NextPage = () => {
         description="디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다."
       />
       <Header>
-        <H1>
-          새로운 도전과 함께한 <br />
-          즐거운 이야기들
-        </H1>
-        <P>다양한 도전과 함께한 즐거운 이야기들을 소개합니다.</P>
+        <H1>사이드 프로젝트</H1>
+        <P>다양한 도전과 새로운 이야기.</P>
       </Header>
       <main style={{ marginTop: "140px" }}>
         <CardMdList list={Projects} />
