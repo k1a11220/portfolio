@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { CustomHead } from "@components/custom-head";
 import { B, H1, H3, Headline, P } from "@components/typography";
 import { CardLgList } from "@components/card-lg-list";
-import Thumbnail_solift from "@media/solift/thumbnail.png";
+import Thumbnail_solift from "@media/solift/thumbnail-2.png";
 import Thumbnail_bokdda from "@media/bokdda/thumbnail.png";
 import Thumbnail_election from "@media/election/thumbnail.png";
 import Thumbnail_ald from "@media/ald/thumbnail.jpg";
@@ -12,7 +12,7 @@ import styled from "@emotion/styled";
 
 const Projects = [
   {
-    title: "Solift",
+    title: "SOLIFT",
     description: "프로덕트 디자인, 풀스택 개발",
     thumbnail: Thumbnail_solift,
     link: "/projects/solift",

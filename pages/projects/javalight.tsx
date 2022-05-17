@@ -45,8 +45,8 @@ const JavalightPage: NextPage = () => {
           title="자바라이트"
           description="5.6억명의 빛 없이 살아가는 아프리카 사람들을 위한 에너지 솔루션"
           timeline="Dec 2021 - Sep 2021"
-          role="Product Design & Engineering"
-          hero={j6}
+          role="Design Engineering"
+          hero={j7}
           background={"#fdfafa"}
           profile={[
             { name: "Jinsoo", role: "Project Lead", image: profile_jinsoo },
