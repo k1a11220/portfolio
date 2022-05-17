@@ -69,7 +69,7 @@ export function CardMd({
       <CardContent>
         <>
           <ImgContainer>
-            <Image src={thumbnail} layout="fill" objectFit="contain" />
+            <Image src={thumbnail} layout="fill" objectFit="cover" />
           </ImgContainer>
           <Info>
             <p>{subtitle}</p>

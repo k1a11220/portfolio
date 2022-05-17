@@ -47,14 +47,14 @@ const URL = styled(Desc)`
 `;
 
 const LinkPreview = ({ link }: { link: string }) => {
-  // const { data } = useLink(link);
-  const data = {
-    title: "볶다, 복지경험 개선 프로젝트",
-    description: "Google is a search engine.",
-    image:
-      "https://blog.feedback.io/wp-content/uploads/2022/04/CustomerJourney2-07-1-768x458.png",
-    url: "https://www.google.com",
-  };
+  const { data } = useLink(link);
+  // const data = {
+  //   title: "볶다, 복지경험 개선 프로젝트",
+  //   description: "Google is a search engine.",
+  //   image:
+  //     "https://blog.feedback.io/wp-content/uploads/2022/04/CustomerJourney2-07-1-768x458.png",
+  //   url: "https://www.google.com",
+  // };
   return (
     <Container href={data?.url} target="_blank" rel="noopener norefferer">
       <ImgWrapper>
