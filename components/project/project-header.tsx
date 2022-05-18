@@ -158,7 +158,7 @@ export function ProjectHeader({
                           return (
                             <a
                               target="_blank"
-                              rel="noopener norefferer"
+                              rel="noopener noreferrer"
                               key={index}
                               href={item.href}
                             >
@@ -169,7 +169,7 @@ export function ProjectHeader({
                           return (
                             <a
                               target="_blank"
-                              rel="noopener norefferer"
+                              rel="noopener noreferrer"
                               key={index}
                               href={item.href}
                             >
@@ -180,7 +180,7 @@ export function ProjectHeader({
                           return (
                             <a
                               target="_blank"
-                              rel="noopener norefferer"
+                              rel="noopener noreferrer"
                               key={index}
                               href={item.href}
                             >

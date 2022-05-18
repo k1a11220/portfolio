@@ -43,7 +43,7 @@ export function Info({ list }: any) {
         <InfoDesc>{post.desc}</InfoDesc>
       </div>
       {post.isIcon ? (
-        <a href={post.download} target="_blank" rel="noopener norefferer">
+        <a href={post.download} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFileLines} size="lg" />
         </a>
       ) : null}
