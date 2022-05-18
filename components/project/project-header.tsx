@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
 import { DownloadAppstore } from "@media/common/download-appstore";
 import { VisitWeb } from "@media/common/visit-web";
 import { DownloadPlaystore } from "@media/common/download-playstore";
