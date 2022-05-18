@@ -64,7 +64,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 href={"https://www.instagram.com/beomsoo_son/"}
               >
-                <FontAwesomeIcon size="xl" icon={faInstagram} />
+                <FontAwesomeIcon size="lg" icon={faInstagram} />
               </a>
             </li>
 
@@ -74,7 +74,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 href={"https://github.com/k1a11220"}
               >
-                <FontAwesomeIcon size="xl" icon={faGithub} />
+                <FontAwesomeIcon size="lg" icon={faGithub} />
               </a>
             </li>
 
@@ -84,7 +84,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 href={"https://www.linkedin.com/in/beomsoo-son-65a201178/"}
               >
-                <FontAwesomeIcon size="xl" icon={faLinkedinIn} />
+                <FontAwesomeIcon size="lg" icon={faLinkedinIn} />
               </a>
             </li>
             <li>
@@ -93,7 +93,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 href={"https://www.facebook.com/profile.php?id=100011177730168"}
               >
-                <FontAwesomeIcon size="xl" icon={faFacebookF} />
+                <FontAwesomeIcon size="lg" icon={faFacebookF} />
               </a>
             </li>
           </IconContainer>
