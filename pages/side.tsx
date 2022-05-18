@@ -14,7 +14,7 @@ const Projects = [
     title: "May KING",
     subtitle: "2019",
     description:
-      "경기 꿈의학교 사업에 선정되어 디자인, 설계 교육 커리큘럼을 기획하고 직접 운영했습니다.",
+      "경기 꿈의학교 사업에 참여하여 디자인, 설계 교육 커리큘럼을 기획하고 운영했습니다.",
     thumbnail: Thumbnail_m1,
     link: "https://www.youtube.com/watch?v=Q3_Rsd0PUmA",
   },
@@ -22,7 +22,7 @@ const Projects = [
     title: "군복무 가이드",
     subtitle: "2021",
     description:
-      "입대 일주일 전 군복무자들에게 도움되는 정보를 정리한 서비스를 빠르게 만들었습니다.",
+      "군 복무자에게 도움되는 정보를 정리한 서비스입니다. 입대 전 일주일 동안 빠르게 만든 프로덕트입니다.",
     thumbnail: Thumbnail_goonin,
     link: "https://www.goonin.kr",
   },
@@ -63,12 +63,12 @@ const Bside: NextPage = () => {
   return (
     <>
       <CustomHead
-        title="손범수 - 디자인 엔지니어 & 프로덕트 디자이너"
+        title="손범수 - 사이드 프로젝트"
         description="디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다."
       />
       <Header>
         <H1>사이드 프로젝트</H1>
-        <P>다양한 도전과 새로운 이야기.</P>
+        <P>제가 했던 다양한 도전, 고민, 영감들을 소개합니다. 🚀</P>
       </Header>
       <main style={{ marginTop: "140px" }}>
         <CardMdList list={Projects} />

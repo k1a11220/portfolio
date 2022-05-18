@@ -7,7 +7,7 @@ import Thumbnail_bokdda from "@media/bokdda/thumbnail.png";
 import Thumbnail_election from "@media/election/thumbnail.png";
 import Thumbnail_ald from "@media/ald/thumbnail.jpg";
 import Thumbnail_hydro from "@media/hydro/thumbnail.png";
-import Thumbnail_javara from "@media/javara/thumbnail.png";
+import Thumbnail_javara from "@media/javara/thumbnail-1.png";
 import styled from "@emotion/styled";
 
 const Projects = [

@@ -16,6 +16,7 @@ import A5 from "@media/ald/a5.png";
 import A6 from "@media/ald/a6.jpeg";
 import A7 from "@media/ald/a7.jpeg";
 import A8 from "@media/ald/a8.jpeg";
+import A9 from "@media/ald/a9.jpeg";
 import LinkCard from "@components/link-card";
 
 const ALDPage: NextPage = () => {
@@ -153,6 +154,7 @@ const ALDPage: NextPage = () => {
             <br /> <br />
           </P>
           <StyledImage src={A7} />
+          <StyledImage src={A9} />
           <StyledImage src={A8} />
         </Section>
         <Section>

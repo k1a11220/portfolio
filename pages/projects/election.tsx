@@ -3,7 +3,7 @@ import React from "react";
 import { CustomHead } from "@components/custom-head";
 import { ProjectHeader } from "@components/project/project-header";
 import { Divider } from "@components/typography";
-import hero from "@media/solift/thumbnail.png";
+import hero from "@media/election/thumbnail.png";
 import ComingSoon from "@components/project/coming-soon";
 
 const ElectionPage: NextPage = () => {
@@ -11,14 +11,20 @@ const ElectionPage: NextPage = () => {
     <>
       <CustomHead title="우리의 선택, 우리의 미래" description="" />
       <article>
-        {/* <ProjectHeader
-          title="Solift, 군 장병 자기계발 플랫폼"
-          description="직접 복무하면서 느낀 문제점을 바탕으로 병사들의 의미있는 군생활을 도와주는 솔루션을 만듭니다."
+        <ProjectHeader
+          title="우리의 선택, 우리의 미래"
+          description="2022년 대선를 준비하며 부대 내부에서 공유한 대선 후보를 정리한 서비스입니다."
           timeline="Dec 2021 - Present"
+          product={[
+            {
+              type: "web",
+              href: "https://www.2022-election.com/",
+            },
+          ]}
           role="Product Design & Development"
           hero={hero}
-          background={"#F4FAFF"}
-        /> */}
+          background={"#F2F7F6"}
+        />
         <ComingSoon type="coming" />
       </article>
     </>

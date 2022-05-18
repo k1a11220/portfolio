@@ -67,8 +67,8 @@ const About: NextPage = () => {
   return (
     <>
       <CustomHead
-        title="손범수 - About me"
-        description="Beomsoo Son's portfolio. Product designer, Design Engineer"
+        title="손범수 - 소개"
+        description="디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를 푸는걸 좋아합니다."
       />
       <Header>
         <ImgContainer>
