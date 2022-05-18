@@ -145,7 +145,7 @@ export function ProjectHeader({
               <p>{description}</p>
             </div>
             <TitleImg>
-              <Image src={hero} layout="responsive" />
+              <Image src={hero as any} layout="responsive" />
             </TitleImg>
             {product === undefined ? null : (
               <ListWrapper>
