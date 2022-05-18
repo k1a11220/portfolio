@@ -1,4 +1,4 @@
-import useSWR from "swr";
+import useSWR, { Fetcher } from "swr";
 
 interface LinkPreviewResponse {
   title: string;
@@ -7,7 +7,8 @@ interface LinkPreviewResponse {
   image: string;
 }
 
-const fetcher = (...args: any) => fetch(...args).then((res) => res.json());
+const fetcher = (arg: any, ...args: any) =>
+  fetch(arg, ...args).then((res) => res.json());
 
 export function useLink(link: string) {
   const API_KEY = "b2ecf80d3079ccc66f241365adc3f962";
