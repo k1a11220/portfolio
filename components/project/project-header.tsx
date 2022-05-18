@@ -11,7 +11,7 @@ interface ProjectHeader {
   timeline: string;
   role: string;
   profile?: Array<{ name: string; role: string; image: any }>;
-  hero: ImageProps;
+  hero: any;
   background: string;
   product?: Array<{ type: "ios" | "aos" | "web"; href: string }>;
 }
