@@ -10,6 +10,9 @@ import ui_0 from "@media/bokdda/ui-0.png";
 import ui_1 from "@media/bokdda/ui-1.png";
 import ui_2 from "@media/bokdda/ui-2.png";
 import ui_3 from "@media/bokdda/ui-3.png";
+import ui_4 from "@media/bokdda/ui-4.png";
+import ui_5 from "@media/bokdda/ui-5.png";
+import ui_6 from "@media/bokdda/ui-6.png";
 import test_1 from "@media/bokdda/test-1.png";
 import iphone from "@media/common/iphone.png";
 import StyledImage from "@components/project/styled-image";
@@ -86,6 +89,7 @@ const BokddaPage: NextPage = () => {
             검색만 지원하는 한계가 있었고, 복지를 신청하기 위해서 2개 이상의
             서비스를 이용해야 하는 불편함이 존재했습니다.
           </P>
+          <StyledImage src={ui_6} />
           <H3>MVP 검증</H3>
           <P>
             그래서 다른 사람들도 같은 문제를 느끼고 있는가를 확인하고자 간단한
@@ -145,9 +149,10 @@ const BokddaPage: NextPage = () => {
             와 <B>&apos;내가 받을 수 있는 복지가 뭔지 몰라서&apos;</B>가
             대다수를 차지했습니다.
           </P>
+          <StyledImage src={ui_5} />
         </Section>
         <Section>
-          <H2>프로덕트 디자인</H2>
+          <H2>제품 디자인</H2>
           <H3>&apos;중학생&apos;이 직접 입학준비금을 신청할 수 있도록</H3>
           <P>
             크게 2가지 개선을 통해 검색의 정확성, 편리성과 신청 과정의 단순함을
@@ -211,7 +216,7 @@ const BokddaPage: NextPage = () => {
             <br />
             <br />
             <B>□ 신청과정의 간소화.</B> <br />
-            복지 검색 후 실제 신청 전환율이 10 → 35%가량 증가했습니다.
+            복지 검색 후 신청 전환율이 10 → 35%로 증가했습니다.
           </P>
           <StyledImage src={test_1} />
         </Section>

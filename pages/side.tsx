@@ -22,7 +22,7 @@ const Projects = [
     title: "군복무 가이드",
     subtitle: "2021",
     description:
-      "군 복무자에게 도움되는 정보를 정리한 서비스입니다. 입대 전 일주일 동안 빠르게 만든 프로덕트입니다.",
+      "군 복무자에게 도움되는 정보를 정리한 서비스입니다. 입대 전 일주일 동안 빠르게 만들었습니다.",
     thumbnail: Thumbnail_goonin,
     link: "https://www.goonin.kr",
   },
@@ -68,7 +68,7 @@ const Bside: NextPage = () => {
       />
       <Header>
         <H1>사이드 프로젝트</H1>
-        <P>제가 했던 다양한 도전, 고민, 영감들을 소개합니다. 🚀</P>
+        <P>제가 했던 다양한 도전, 고민들을 소개합니다. 🚀</P>
       </Header>
       <main style={{ marginTop: "140px" }}>
         <CardMdList list={Projects} />
