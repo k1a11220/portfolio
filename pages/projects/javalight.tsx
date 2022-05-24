@@ -44,7 +44,7 @@ const JavalightPage: NextPage = () => {
         <ProjectHeader
           title="자바라이트"
           description="5.6억명의 빛 없이 살아가는 아프리카 사람들을 위한 에너지 솔루션"
-          timeline="Dec 2021 - Sep 2021"
+          timeline="Mar 2021 - Aug 2021"
           role="Design Engineering"
           hero={hero}
           background={"#fdfafa"}

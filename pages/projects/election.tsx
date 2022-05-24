@@ -14,7 +14,7 @@ const ElectionPage: NextPage = () => {
         <ProjectHeader
           title="우리의 선택, 우리의 미래"
           description="2022년 대선를 준비하며 부대 내부에서 공유한 대선 후보를 정리한 서비스입니다."
-          timeline="Dec 2021 - Present"
+          timeline="Mar 2022 - Mar 2022"
           product={[
             {
               type: "web",

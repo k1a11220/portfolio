@@ -30,7 +30,7 @@ const ALDPage: NextPage = () => {
         <ProjectHeader
           title="ALD 장비 연구개발 프로젝트"
           description="ALD 공정을 최적화하기 위해 회전 챔버를 어떻게 구현했는지 알아봅니다."
-          timeline="Dec 2018 - Jan 2019"
+          timeline="Feb 2020 - Mar 2021"
           role="Design Engineering & Research"
           profile={[
             { name: "TNG", role: "Design Engineering", image: tngLogo },
