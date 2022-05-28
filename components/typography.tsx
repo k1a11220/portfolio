@@ -35,9 +35,9 @@ export const P = styled.p`
   word-break: keep-all;
 `;
 
-export const B = styled.b`
+export const B = styled.b<{ color: "var(--grey400)" | "var(--blue)" }>`
   font-weight: 500;
-  color: var(--grey400);
+  color: ${(props) => props.color};
 `;
 
 export const Section = styled.section`
@@ -48,6 +48,18 @@ export const Section = styled.section`
 
 export const Divider = styled.div`
   height: 80px;
+`;
+
+export const Box = styled.div`
+  padding: 40px;
+  background-color: var(--grey50);
+  border-radius: 1rem;
+  margin: 40px 0;
+
+  & p {
+    color: var(--grey500);
+    margin-top: 0;
+  }
 `;
 
 export function Headline({ title, color, weight }: Headline) {
