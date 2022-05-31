@@ -95,16 +95,6 @@ const JavalightPage: NextPage = () => {
           <P>
             <Image src={j22} />
           </P>
-          {/* <ImgGrid>
-            <Image src={j6} />
-            <Image src={j7} />
-            <Image src={j9} />
-            <Image src={j10} />
-            <Image src={j1} />
-            <Image src={j2} />
-            <Image src={j3} />
-            <Image src={j4} />
-          </ImgGrid> */}
         </Section>
         <Section>
           <H2>진짜 문제가 뭘까?</H2>
