@@ -18,6 +18,7 @@ import iphone from "@media/common/iphone.png";
 import StyledImage from "@components/project/styled-image";
 import LinkPreview from "@components/link-preview";
 import { StyledVideo } from "@components/project/styled-video";
+import FloatingButton from "@components/floating-button";
 
 const BokddaPage: NextPage = () => {
   return (
@@ -250,6 +251,11 @@ const BokddaPage: NextPage = () => {
           </P>
         </Section>
       </article>
+      <FloatingButton
+        icon={"bulb"}
+        label={"제품 써보기"}
+        link={"https://beomsoo.me/bokjiiiiii/"}
+      />
     </>
   );
 };

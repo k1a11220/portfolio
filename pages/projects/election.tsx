@@ -5,6 +5,7 @@ import { ProjectHeader } from "@components/project/project-header";
 import { Divider } from "@components/typography";
 import hero from "@media/election/thumbnail.png";
 import ComingSoon from "@components/project/coming-soon";
+import FloatingButton from "@components/floating-button";
 
 const ElectionPage: NextPage = () => {
   return (
@@ -27,6 +28,11 @@ const ElectionPage: NextPage = () => {
         />
         <ComingSoon type="coming" />
       </article>
+      <FloatingButton
+        icon={"bulb"}
+        label={"제품 써보기"}
+        link={"https://www.2022-election.com/"}
+      />
     </>
   );
 };
