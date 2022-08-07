@@ -17,14 +17,14 @@ const Button = styled.a<{ isPrimary: boolean }>`
     props.isPrimary ? "var(--blue)" : "var(--white)"};
   border: 1px solid
     ${(props) => (props.isPrimary ? "var(--blue)" : "var(--grey100)")};
-  color: ${(props) => (props.isPrimary ? "var(--white)" : "var(--grey300)")};
+  color: ${(props) => (props.isPrimary ? "var(--white)" : "var(--grey200)")};
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    color: ${(props) => (props.isPrimary ? "var(--blue)" : "var(--grey300)")};
+    color: ${(props) => (props.isPrimary ? "var(--blue)" : "var(--grey500)")};
     border: 1px solid
       ${(props) => (props.isPrimary ? "var(--blue)" : "var(--grey500)")};
     background-color: #ffffff;

@@ -7,7 +7,7 @@ import { CustomHead } from "@components/custom-head";
 
 import porfile_1 from "@media/profile/profile_1.jpeg";
 import porfile_2 from "@media/profile/profile_2.jpg";
-import porfile_3 from "@media/profile/profile_3.jpg";
+import porfile_8 from "@media/profile/profile_8.jpeg";
 import porfile_4 from "@media/profile/profile_4.jpeg";
 
 const Header = styled.header`
@@ -79,7 +79,7 @@ const About: NextPage = () => {
             <Image src={porfile_2} layout="responsive" />
           </Img>
           <Img>
-            <Image src={porfile_3} layout="responsive" />
+            <Image src={porfile_8} layout="responsive" />
           </Img>
           <Img>
             <Image src={porfile_4} layout="responsive" />
@@ -184,12 +184,12 @@ const About: NextPage = () => {
             label={"Contact"}
             blank={true}
           />
-          {/* <CTA
+          <CTA
             href="https://docs.google.com/document/d/1ecSm_tNUoL6ZVSBwjyNmpl_TiBkEgGb3oAIUFjjOWdY/edit?usp=sharing"
             isPrimary={false}
             label={"Resume"}
             blank={true}
-          /> */}
+          />
         </ButtonContainer>
       </main>
     </>
