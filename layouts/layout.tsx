@@ -16,7 +16,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   return (
     <Container>
-      <Navigation />
+      {router.pathname === "/projects/solift/privacy-policy" ? null : (
+        <Navigation />
+      )}
       <div
         style={{
           maxWidth:
@@ -40,7 +42,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {children}
         </div>
       </div>
-      <Footer />
+      {router.pathname === "/projects/solift/privacy-policy" ? null : (
+        <Footer />
+      )}
     </Container>
   );
 }
