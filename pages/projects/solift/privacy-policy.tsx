@@ -5,7 +5,10 @@ import { B, Divider, H1, H2, P, Section } from "@components/typography";
 const PrivacyPolicy = () => {
   return (
     <>
-      <CustomHead title="우리의 선택, 우리의 미래" description="" />
+      <CustomHead
+        title="solift 개인정보 처리방침"
+        description="solift 개인정보 처리방침입니다."
+      />
       <article>
         <Divider />
         <H1>solift 개인정보 처리방침</H1>
