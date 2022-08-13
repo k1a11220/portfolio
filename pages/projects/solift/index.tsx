@@ -2,9 +2,12 @@ import { NextPage } from "next";
 import React from "react";
 import { CustomHead } from "@components/custom-head";
 import { ProjectHeader } from "@components/project/project-header";
-import { Divider } from "@components/typography";
+import { Divider, Section } from "@components/typography";
 import hero from "@media/solift/thumbnail-2.png";
+import img_1 from "@media/solift/thumbnail-3.png";
+
 import ComingSoon from "@components/project/coming-soon";
+import StyledImage from "@components/project/styled-image";
 
 const SoliftPage: NextPage = () => {
   return (
@@ -19,6 +22,9 @@ const SoliftPage: NextPage = () => {
           hero={hero}
           background={"#F4FAFF"}
         />
+        <Section>
+          <StyledImage src={img_1} />
+        </Section>
         <ComingSoon type="coming" />
       </article>
     </>
