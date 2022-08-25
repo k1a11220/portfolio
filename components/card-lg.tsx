@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
+import { H3, P } from "./typography";
 
 export interface Card {
   title: string;
@@ -72,22 +73,35 @@ const CardWrapper = styled.div`
   justify-content: flex-end;
 `;
 
+const DescContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  & h3,
+  p {
+    margin: 0;
+  }
+`;
+
 export function CardLg({ title, description, thumbnail, link }: Card) {
   return (
-    <CardContent>
-      <Link href={link}>
-        <CardWrapper>
-          <CardFilter>
+    <div>
+      <CardContent>
+        <Link href={link}>
+          <CardWrapper>
             <div>
-              <h3>{title}</h3>
-              <p>{description}</p>
+              <Image src={thumbnail} priority={true} layout="responsive" />
             </div>
-          </CardFilter>
-          <div>
-            <Image src={thumbnail} priority={true} layout="responsive" />
-          </div>
-        </CardWrapper>
-      </Link>
-    </CardContent>
+          </CardWrapper>
+        </Link>
+      </CardContent>
+      <DescContainer>
+        <H3>{title}</H3>
+        <P>{description}</P>
+      </DescContainer>
+    </div>
   );
 }
