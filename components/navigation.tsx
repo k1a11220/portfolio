@@ -81,7 +81,7 @@ const Label: any = styled.button`
   background: transparent;
 
   &:hover {
-    background-color: var(--grey50);
+    color: var(--grey100);
   }
 `;
 
@@ -133,7 +133,7 @@ export function Navigation() {
                   style={{
                     color:
                       router.pathname === "/about" ? "var(--grey500)" : null,
-                    fontWeight: router.pathname === "/about" ? "400" : null,
+                    fontWeight: router.pathname === "/about" ? "500" : null,
                   }}
                   onClick={() => router.push("/about")}
                 >
@@ -145,7 +145,7 @@ export function Navigation() {
                   style={{
                     color:
                       router.pathname === "/side" ? "var(--grey500)" : null,
-                    fontWeight: router.pathname === "/side" ? "400" : null,
+                    fontWeight: router.pathname === "/side" ? "500" : null,
                   }}
                   onClick={() => router.push("/side")}
                 >
