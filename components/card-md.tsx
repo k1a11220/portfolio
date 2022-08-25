@@ -1,14 +1,11 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
+import Link from "next/link";
 import { ProjectWithSubtitle } from "./card-md-list";
 
 interface CardMdProps extends ProjectWithSubtitle {
   isWide: boolean;
 }
-
-const Container = styled.a`
-  text-decoration: none;
-`;
 
 const CardContent = styled.div<{ isWide: boolean }>`
   cursor: pointer;
@@ -67,7 +64,7 @@ export function CardMd({
   isWide,
 }: CardMdProps) {
   return (
-    <Container target="_blank" rel="noopener norefferer" href={link}>
+    <Link href={link}>
       <CardContent isWide={isWide}>
         <ImgContainer>
           <Image src={thumbnail} layout="fill" objectFit="cover" />
@@ -78,6 +75,6 @@ export function CardMd({
           <p>{description}</p>
         </Info>
       </CardContent>
-    </Container>
+    </Link>
   );
 }
