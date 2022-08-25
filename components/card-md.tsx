@@ -2,16 +2,20 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import { ProjectWithSubtitle } from "./card-md-list";
 
+interface CardMdProps extends ProjectWithSubtitle {
+  isWide: boolean;
+}
+
 const Container = styled.a`
   text-decoration: none;
 `;
 
-const CardContent = styled.div`
+const CardContent = styled.div<{ isWide: boolean }>`
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: ${(props) => (props.isWide ? 16 / 10 : 3 / 2)};
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -35,9 +39,10 @@ const Info = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+  margin-left: 2px;
 
   & h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--grey500);
   }
@@ -59,20 +64,19 @@ export function CardMd({
   description,
   thumbnail,
   link,
-}: ProjectWithSubtitle) {
+  isWide,
+}: CardMdProps) {
   return (
     <Container target="_blank" rel="noopener norefferer" href={link}>
-      <CardContent>
-        <>
-          <ImgContainer>
-            <Image src={thumbnail} layout="fill" objectFit="cover" />
-          </ImgContainer>
-          <Info>
-            <p>{subtitle}</p>
-            <h3>{title}</h3>
-            <p>{description}</p>
-          </Info>
-        </>
+      <CardContent isWide={isWide}>
+        <ImgContainer>
+          <Image src={thumbnail} layout="fill" objectFit="cover" />
+        </ImgContainer>
+        <Info>
+          {subtitle !== undefined ? <p>{subtitle}</p> : null}
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </Info>
       </CardContent>
     </Container>
   );

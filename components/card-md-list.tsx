@@ -26,7 +26,13 @@ const ProjectContainer = styled.ul`
   }
 `;
 
-export function CardMdList({ list }: { list: ProjectWithSubtitle[] }) {
+export function CardMdList({
+  list,
+  isWide,
+}: {
+  list: ProjectWithSubtitle[];
+  isWide: boolean;
+}) {
   return (
     <ProjectContainer>
       {list.map((project, index) => (
@@ -37,6 +43,7 @@ export function CardMdList({ list }: { list: ProjectWithSubtitle[] }) {
           description={project.description}
           thumbnail={project.thumbnail}
           link={project.link}
+          isWide={isWide}
         />
       ))}
     </ProjectContainer>

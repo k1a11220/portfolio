@@ -75,7 +75,7 @@ const Home: NextPage = () => {
         </P>
       </Header>
       <main style={{ marginTop: "140px" }}>
-        <CardMdList list={Projects} />
+        <CardMdList isWide={true} list={Projects} />
       </main>
     </>
   );
