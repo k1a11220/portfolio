@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
-import { H3, P } from "./typography";
+import { H3, H4, P } from "./typography";
 
 export interface Card {
   title: string;
@@ -80,7 +80,7 @@ const DescContainer = styled.div`
   margin-top: 16px;
   margin-bottom: 24px;
 
-  & h3,
+  & h4,
   p {
     margin: 0;
   }
@@ -99,7 +99,7 @@ export function CardLg({ title, description, thumbnail, link }: Card) {
         </Link>
       </CardContent>
       <DescContainer>
-        <H3>{title}</H3>
+        <H4>{title}</H4>
         <P>{description}</P>
       </DescContainer>
     </div>

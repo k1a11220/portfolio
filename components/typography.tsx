@@ -28,6 +28,12 @@ export const H3 = styled.h3`
   word-break: keep-all;
 `;
 
+export const H4 = styled.h4`
+  font-size: 1.25rem;
+  font-weight: 500;
+  word-break: keep-all;
+`;
+
 export const P = styled.p`
   margin-top: 1rem;
   line-height: 1.5;
