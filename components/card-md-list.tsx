@@ -1,9 +1,15 @@
 import styled from "@emotion/styled";
 import { ImageProps } from "next/image";
-import { Project } from "./card-lg-list";
 import { CardMd } from "./card-md";
 
-interface ProjectWithSubtitle extends Project {
+export interface Project {
+  title: string;
+  description: string;
+  thumbnail: ImageProps | any;
+  link: string;
+}
+
+export interface ProjectWithSubtitle extends Project {
   subtitle?: string;
 }
 

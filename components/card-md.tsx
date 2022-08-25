@@ -1,10 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-import { Card } from "./card-lg";
-
-interface CardWithSubtitle extends Card {
-  subtitle?: string;
-}
+import { ProjectWithSubtitle } from "./card-md-list";
 
 const Container = styled.a`
   text-decoration: none;
@@ -63,7 +59,7 @@ export function CardMd({
   description,
   thumbnail,
   link,
-}: CardWithSubtitle) {
+}: ProjectWithSubtitle) {
   return (
     <Container target="_blank" rel="noopener norefferer" href={link}>
       <CardContent>
