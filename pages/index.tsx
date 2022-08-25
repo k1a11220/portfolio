@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { CustomHead } from "@components/custom-head";
 import { B, H1, H3, Headline, P } from "@components/typography";
 import { CardLgList } from "@components/card-lg-list";
-import Thumbnail_solift from "@media/solift/thumbnail-2.png";
+import Thumbnail_solift from "@media/solift/thumbnail-5.png";
 import Thumbnail_bokdda from "@media/bokdda/thumbnail.png";
 import Thumbnail_election from "@media/election/thumbnail.png";
 import Thumbnail_ald from "@media/ald/thumbnail.jpg";
