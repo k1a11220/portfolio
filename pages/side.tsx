@@ -4,19 +4,19 @@ import { H1, P } from "@components/typography";
 import styled from "@emotion/styled";
 import { CardMdList } from "@components/card-md-list";
 import Thumbnail_m1 from "@media/mayking/thumbnail.jpg";
-import Thumbnail_daily from "@media/dailyui/thumbnail.png";
+import Thumbnail_daily from "@media/dailyui/done.png";
 import Thumbnail_toothbrush from "@media/toothbrush/thumbnail.png";
 import Thumbnail_padintosh from "@media/padintosh/thumbnail.png";
 import Thumbnail_goonin from "@media/goonin/thumbnail-2.png";
 
 const Projects = [
   {
-    title: "May KING",
-    subtitle: "2019",
+    title: "Daily UI 챌린지",
+    subtitle: "2022",
     description:
-      "경기 꿈의학교 사업에 참여하여 디자인, 설계 교육 커리큘럼을 기획하고 운영했습니다.",
-    thumbnail: Thumbnail_m1,
-    link: "https://www.youtube.com/watch?v=Q3_Rsd0PUmA",
+      "100일 동안 100가지 주제의 디자인을 수행하는 챌린지입니다. 다양한 디자인 시도와 기초 역량을 기를 수 있었던 도전이었습니다.",
+    thumbnail: Thumbnail_daily,
+    link: "https://dribbble.com/Beomsoo",
   },
   {
     title: "군복무 가이드",
@@ -25,13 +25,6 @@ const Projects = [
       "군 복무자에게 도움되는 정보를 정리한 서비스입니다. 입대 전 일주일 동안 빠르게 만들었습니다.",
     thumbnail: Thumbnail_goonin,
     link: "https://www.goonin.kr",
-  },
-  {
-    title: "Daily UI",
-    subtitle: "2022",
-    description: "Become a Better Designer in 100 Days.",
-    thumbnail: Thumbnail_daily,
-    link: "https://www.instagram.com/ui_stuff/",
   },
   {
     title: "Padintosh",
@@ -46,6 +39,14 @@ const Projects = [
     description: "칫솔모를 교체할 수 있는 칫솔입니다.",
     thumbnail: Thumbnail_toothbrush,
     link: "https://www.behance.net/gallery/102975555/Toothbrush",
+  },
+  {
+    title: "May KING",
+    subtitle: "2019",
+    description:
+      "경기 꿈의학교 사업에 참여하여 디자인, 설계 교육 커리큘럼을 기획하고 운영했습니다.",
+    thumbnail: Thumbnail_m1,
+    link: "https://www.youtube.com/watch?v=Q3_Rsd0PUmA",
   },
 ];
 
@@ -71,7 +72,7 @@ const Bside: NextPage = () => {
         <P>제가 했던 다양한 도전, 고민들을 소개합니다. 🚀</P>
       </Header>
       <main style={{ marginTop: "140px" }}>
-        <CardMdList list={Projects} />
+        <CardMdList isWide={false} list={Projects} />
       </main>
     </>
   );
