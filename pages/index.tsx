@@ -12,7 +12,7 @@ import { CardMdList } from "@components/card-md-list";
 
 const Projects = [
   {
-    title: "SOLIFT",
+    title: "solift",
     description: "프로덕트 디자인, 풀스택 개발",
     thumbnail: Thumbnail_solift,
     link: "/projects/solift",
