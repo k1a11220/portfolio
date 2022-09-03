@@ -13,7 +13,7 @@ import s5 from "@media/solift/s5.png";
 import s6 from "@media/solift/s6.png";
 import StyledImage from "@components/project/styled-image";
 import FloatingButton from "@components/floating-button";
-import ImgGrid from "@components/img-grid";
+import ComingSoon from "@components/project/coming-soon";
 
 const SoliftPage: NextPage = () => {
   return (
@@ -38,38 +38,7 @@ const SoliftPage: NextPage = () => {
           background={"#F4FAFF"}
         />
         <Divider />
-        <Section>
-          <H2>18개월의 군생활. 어떻게 하면 의미있게 보낼 수 있을까요?</H2>
-          <P>
-            solift는 군 입대를 앞두거나 복무중인 청년이라면 누구나 했을
-            고민에서부터 시작했습니다. &apos;시간을 의미있게 보내는 방법&apos;
-            에 대해 저 역시 많은 고민을 했습니다.
-          </P>
-        </Section>
-        <Section>
-          <H2>인터뷰 시작</H2>
-          <P>
-            다양한 사람들이 모여있는 군대라는 조직 특성상 인터뷰 하기에는
-            더할나위없이 좋은 환경이었습니다. 많은 사람들과 이야기를 나누었고
-            크게 아래와 같은 질문으로 나눌 수 있었습니다.
-            <br />
-            <br />
-          </P>
-          <StyledImage src={s1} />
-          <ImgGrid imgList={[s3, s4, s5, s6]} />
-        </Section>
-        <Section>
-          <H2>가설</H2>
-          <P>가설 내용과 선택하게 된 이유</P>
-        </Section>
-        <Section>
-          <H2>제품 개발</H2>
-          <P>개발 과정</P>
-        </Section>
-        <Section>
-          <H2>지표 분석</H2>
-          <P>홍보 없이 이뤄낸 다운로드 수</P>
-        </Section>
+        <ComingSoon type="coming" />
         <FloatingButton
           icon={"bulb"}
           label={"제품 써보기"}
