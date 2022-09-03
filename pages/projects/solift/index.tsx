@@ -7,8 +7,13 @@ import hero from "@media/solift/thumbnail-4.png";
 import img_1 from "@media/solift/thumbnail-3.png";
 import s1 from "@media/solift/s1.png";
 import s2 from "@media/solift/s2.png";
+import s3 from "@media/solift/s3.png";
+import s4 from "@media/solift/s4.png";
+import s5 from "@media/solift/s5.png";
+import s6 from "@media/solift/s6.png";
 import StyledImage from "@components/project/styled-image";
 import FloatingButton from "@components/floating-button";
+import ImgGrid from "@components/img-grid";
 
 const SoliftPage: NextPage = () => {
   return (
@@ -51,7 +56,7 @@ const SoliftPage: NextPage = () => {
             <br />
           </P>
           <StyledImage src={s1} />
-          <StyledImage src={s2} />
+          <ImgGrid imgList={[s3, s4, s5, s6]} />
         </Section>
         <Section>
           <H2>가설</H2>
