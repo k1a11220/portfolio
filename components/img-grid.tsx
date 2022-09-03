@@ -32,8 +32,8 @@ const ImgContainer = styled.div`
 const ImgGrid = ({ imgList }: ImgGridProps) => {
   return (
     <Container>
-      {imgList.map((img) => (
-        <ImgContainer>
+      {imgList.map((img, index) => (
+        <ImgContainer key={index}>
           <Image src={img} layout="responsive" />
         </ImgContainer>
       ))}
