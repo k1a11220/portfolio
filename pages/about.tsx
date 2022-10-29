@@ -92,7 +92,7 @@ const About: NextPage = () => {
         </h1>
         <h3>
           안녕하세요, 손범수입니다. 디자인 엔지니어이자 디지털 프로덕트 디자이너
-          입니다. 도전적인 팀원들과 함께 사용자 관점에서 문제를 해결하는 걸
+          입니다. 도전적인 팀원들과 함께 사용자 관점에서 문제를 해결하는
           좋아합니다. 제품의 형태에 구애받지 않고 소프트웨어와 하드웨어 사이를
           넘나들며 문제를 풀어가고 있습니다. 제품과 사용자의 관계에 주목하며,
           멋진 서비스가 사람들의 삶과 함께하는 모습을 꿈꿉니다.
@@ -100,7 +100,7 @@ const About: NextPage = () => {
       </Header>
       <main>
         <InfoList
-          label={"Experience"}
+          label={"Work Experience"}
           list={[
             {
               title: "대한민국 경찰청",
@@ -109,12 +109,12 @@ const About: NextPage = () => {
             },
             {
               title: "TNG",
-              summary: "Design Engineer · 2020.1 ~ 2021.8",
+              summary: "디자인 엔지니어 · 2020.1 ~ 2021.8",
               desc: "한국생산기술연구원, 삼성디스플레이와 함께 ALD 장비를 만들었습니다. ALD 장비의 하드웨어 설계 및 사용자 인터페이스 설계에 참여했습니다. 비접촉 수소 압축기 프로토타입을 개발했습니다.",
             },
             {
               title: "BE THE LIGHT",
-              summary: "Design Engineer · 2021.3 ~ 2021.8",
+              summary: "디자인 엔지니어 · 2021.3 ~ 2021.8",
               desc: "아프리카에 빛을 전하자는 목표로 탄생한 소셜 스타트업인 BE THE LIGHT에서 휴대용 태양광 에너지 솔루션인 JAVALIGHT를 설계했습니다.",
             },
             {
