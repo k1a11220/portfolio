@@ -11,9 +11,25 @@ import s3 from "@media/solift/s3.png";
 import s4 from "@media/solift/s4.png";
 import s5 from "@media/solift/s5.png";
 import s6 from "@media/solift/s6.png";
+import s7 from "@media/solift/s7.png";
+import s8 from "@media/solift/s8.png";
+import s9 from "@media/solift/s9.png";
+import s10 from "@media/solift/s10.png";
+import s11 from "@media/solift/s11.png";
+import iphone from "@media/common/iphone.png";
 import StyledImage from "@components/project/styled-image";
 import FloatingButton from "@components/floating-button";
 import ComingSoon from "@components/project/coming-soon";
+import styled from "@emotion/styled";
+import Image from "next/image";
+import { StyledVideo } from "@components/project/styled-video";
+
+const ImgGrid = styled.div`
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+`;
 
 const SoliftPage: NextPage = () => {
   return (
@@ -59,16 +75,14 @@ const SoliftPage: NextPage = () => {
           <P>
             인터뷰 내용을 바탕으로 처음에는 커다란 목표(전공 공부, 시험 준비,
             운동 등)가 있었지만 시간이 지날수록 목표를 관리하지 못해 시간이
-            있음에도 불구하고 의지가 약해진다는 결론을 내렸습니다.
+            있음에도 불구하고 의지가 약해진다는 결론을 내렸습니다. <br />
+            <br />
           </P>
-        </Section>
-        <Section>
-          <H2>1800시간</H2>
-          <P>
-            시간은 굉장히 소중한 자원입니다. 1800시간은 군대에서 평균적으로
-            자기개발에 투자할 수 있는 시간입니다. 그런데 많은 장병들이 이 시간을
-            의미 있게 사용하지 못하는 건 상당히 큰 문제라 생각했습니다.
-          </P>
+          <ImgGrid>
+            <Image src={s3} />
+            <Image src={s5} />
+          </ImgGrid>
+          <StyledImage src={s7} />
         </Section>
 
         <Section>
@@ -80,13 +94,21 @@ const SoliftPage: NextPage = () => {
             </B>
           </H4>
           <P>
-            가설 1. 애초에 군대에서 어떻게 자기계발을 해야 할지 모른다.
+            <B color="var(--grey400)">
+              가설 1. 애초에 군대에서 어떻게 자기계발을 해야 할지 모른다.
+            </B>
             <br /> - 군인들이 서로 정보를 공유할 수 있는 커뮤니티를 만들자.(익명
-            기반) <br />
-            가설 2. 시간이 지나면서 환경과 방법은 충분히 마련되지만, 마땅히
-            목표를 관리하지 못해 그냥 시간이 흘러가버린다. <br />- 쉽게 목표를
-            관리할 수 있는 서비스를 만들자.
+            기반)
           </P>
+          <StyledImage src={s8} />
+          <P>
+            <B color="var(--grey400)">
+              가설 2. 시간이 지나면서 환경과 방법은 충분히 마련되지만, 마땅히
+              목표를 관리하지 못해 그냥 시간이 흘러가버린다.
+            </B>{" "}
+            <br />- 쉽게 목표를 관리할 수 있는 서비스를 만들자.
+          </P>
+          <StyledImage src={s9} />
           <P>
             질문을 바탕으로 총 2가지의 가설을 세웠고, 인터뷰 결과, 개발시간등을
             고려해 2번 가설을 먼저 검증하고자 했습니다.
@@ -104,9 +126,10 @@ const SoliftPage: NextPage = () => {
             빠르게 개발, 배포하여 부대 내 선후임들과 사용자 테스트 및 인터뷰를
             했습니다.
           </P>
+          <StyledVideo video="/soliftProto.mp4" img={iphone} />
         </Section>
         <Section>
-          <H2>문제가 해결되었다고 생각하시나요? 왜 그렇게 생각하시나요?</H2>
+          <H2>Reflection</H2>
           <H4>
             [solift로 아낀 1800시간. 그런데 장병들의 문제를 해결한 것일까요?]
           </H4>
@@ -129,6 +152,7 @@ const SoliftPage: NextPage = () => {
             이벤트만 발생했고, 이는 저희의 예상과 다르게 할일 관리앱으로
             사용하고 있다는 의미였습니다.
           </P>
+          <StyledImage src={s10} />
           <H4>[왜 사용자들은 우리의 의도와 다르게 제품을 사용할까요?]</H4>
           <P>
             여러 고민과 인터뷰 끝에 실패의 원인을 하나로 정의했습니다.
@@ -160,6 +184,7 @@ const SoliftPage: NextPage = () => {
             첫 시도는 실패했지만 반복적 개선작업을 통해 문제를 해결하고자
             합니다.
           </P>
+          <StyledImage src={s11} />
         </Section>
         <FloatingButton
           icon={"bulb"}
