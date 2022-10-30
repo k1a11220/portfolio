@@ -16,7 +16,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4;
   word-break: keep-all;
 `;
@@ -29,6 +29,7 @@ export const H3 = styled.h3`
 `;
 
 export const H4 = styled.h4`
+  margin-top: 2rem;
   font-size: 1.25rem;
   font-weight: 500;
   word-break: keep-all;
@@ -38,6 +39,7 @@ export const P = styled.p`
   margin-top: 1rem;
   line-height: 1.5;
   font-size: 1.125rem;
+  font-weight: 300;
   color: var(--grey200);
   word-break: keep-all;
 `;
