@@ -12,13 +12,13 @@ import { CardMdList } from "@components/card-md-list";
 
 const Projects = [
   {
-    title: "solift",
+    title: "solift, OKR 기반의 개인목표 관리 서비스",
     description: "프로덕트 디자인, 풀스택 개발",
     thumbnail: Thumbnail_solift,
     link: "/projects/solift",
   },
   {
-    title: "볶다",
+    title: "볶다, 복지 검색경험 개선 프로젝트",
     description: "프로덕트 디자인, UX 리서치, MVP",
     thumbnail: Thumbnail_bokdda,
     link: "/projects/bokdda",
