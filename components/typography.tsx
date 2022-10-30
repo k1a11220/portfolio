@@ -15,15 +15,19 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.4;
   word-break: keep-all;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e9ebee;
+  margin-bottom: 0.5rem;
 `;
 
 export const H3 = styled.h3`
   margin-top: 2rem;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   font-weight: 500;
   word-break: keep-all;
 `;
@@ -37,7 +41,7 @@ export const H4 = styled.h4`
 
 export const P = styled.p`
   margin-top: 1rem;
-  line-height: 1.5;
+  line-height: 1.75;
   font-size: 1.125rem;
   font-weight: 300;
   color: var(--grey200);
