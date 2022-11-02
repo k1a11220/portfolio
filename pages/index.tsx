@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { CustomHead } from "@components/custom-head";
 import { B, H1, H3, Headline, P } from "@components/typography";
-import Thumbnail_solift from "@media/solift/thumbnail-5.png";
-import Thumbnail_bokdda from "@media/bokdda/thumbnail.png";
+import Thumbnail_solift from "@media/solift/thumbnail-8.png";
+import Thumbnail_bokdda from "@media/bokdda/thumbnail-1.png";
 import Thumbnail_election from "@media/election/thumbnail.png";
 import Thumbnail_ald from "@media/ald/thumbnail.jpg";
 import Thumbnail_hydro from "@media/hydro/thumbnail.png";
@@ -35,12 +35,12 @@ const Projects = [
     thumbnail: Thumbnail_ald,
     link: "/projects/ald",
   },
-  {
-    title: "Hydrogen Compressor",
-    description: "디자인 엔지니어링, 연구개발",
-    thumbnail: Thumbnail_hydro,
-    link: "/projects/hydro",
-  },
+  // {
+  //   title: "Hydrogen Compressor",
+  //   description: "디자인 엔지니어링, 연구개발",
+  //   thumbnail: Thumbnail_hydro,
+  //   link: "/projects/hydro",
+  // },
   {
     title: "자바라이트",
     description: "디자인 엔지니어링, 연구개발, 프로토타이핑",
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
         </P>
       </Header>
       <main style={{ marginTop: "140px" }}>
-        <CardMdList isWide={true} list={Projects} />
+        <CardMdList isWide={false} list={Projects} />
       </main>
     </>
   );

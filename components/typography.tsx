@@ -26,14 +26,14 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 500;
   word-break: keep-all;
 `;
 
 export const H4 = styled.h4`
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.25rem;
   font-weight: 500;
   word-break: keep-all;

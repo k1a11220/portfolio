@@ -23,9 +23,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         style={{
           maxWidth:
             router.pathname === "/"
-              ? "1140px"
-              : router.pathname === "/bside"
-              ? "1140px"
+              ? "1600px"
+              : router.pathname === "/side"
+              ? "1600px"
               : "780px",
           width: "100%",
           height: "100%",

@@ -112,11 +112,11 @@ const About: NextPage = () => {
               summary: "디자인 엔지니어 · 2020.1 ~ 2021.8",
               desc: "한국생산기술연구원, 삼성디스플레이와 함께 ALD 장비를 만들었습니다. ALD 장비의 하드웨어 설계 및 사용자 인터페이스 설계에 참여했습니다. 비접촉 수소 압축기 프로토타입을 개발했습니다.",
             },
-            {
-              title: "BE THE LIGHT",
-              summary: "디자인 엔지니어 · 2021.3 ~ 2021.8",
-              desc: "아프리카에 빛을 전하자는 목표로 탄생한 소셜 스타트업인 BE THE LIGHT에서 휴대용 태양광 에너지 솔루션인 JAVALIGHT를 설계했습니다.",
-            },
+            // {
+            //   title: "BE THE LIGHT",
+            //   summary: "디자인 엔지니어 · 2021.3 ~ 2021.8",
+            //   desc: "아프리카에 빛을 전하자는 목표로 탄생한 소셜 스타트업인 BE THE LIGHT에서 휴대용 태양광 에너지 솔루션인 JAVALIGHT를 설계했습니다.",
+            // },
             {
               title: "May KING",
               summary: "Founder, Design Instructor · 2018.1 ~ 2019.12",

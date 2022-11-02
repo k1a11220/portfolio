@@ -115,7 +115,7 @@ export function Navigation() {
           width: "100%",
           height: "100%",
           margin: "auto",
-          maxWidth: "1140px",
+          maxWidth: "1600px",
         }}
       >
         <NavWrapper
