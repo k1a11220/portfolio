@@ -104,23 +104,43 @@ const About: NextPage = () => {
           list={[
             {
               title: "대한민국 경찰청",
-              summary: "의무경찰 · 2021.8 ~ Present",
-              desc: "신임 의무경찰 온보딩 경험 개선 프로젝트.",
+              summary: "의무경찰 · 2021.08 ~ Present",
+              desc: "신임 의무경찰 온보딩 경험 개선 프로젝트를 진행했습니다. 오프라인 기반 커뮤니티인 HIT THE FROG를 만들었습니다.",
             },
             {
               title: "TNG",
-              summary: "디자인 엔지니어 · 2020.1 ~ 2021.8",
+              summary: "디자인 엔지니어 · 2020.01 ~ 2021.08",
               desc: "한국생산기술연구원, 삼성디스플레이와 함께 ALD 장비를 만들었습니다. ALD 장비의 하드웨어 설계 및 사용자 인터페이스 설계에 참여했습니다. 비접촉 수소 압축기 프로토타입을 개발했습니다.",
             },
             // {
             //   title: "BE THE LIGHT",
-            //   summary: "디자인 엔지니어 · 2021.3 ~ 2021.8",
+            //   summary: "디자인 엔지니어 · 2021.03 ~ 2021.08",
             //   desc: "아프리카에 빛을 전하자는 목표로 탄생한 소셜 스타트업인 BE THE LIGHT에서 휴대용 태양광 에너지 솔루션인 JAVALIGHT를 설계했습니다.",
             // },
             {
               title: "May KING",
-              summary: "Founder, Design Instructor · 2018.1 ~ 2019.12",
+              summary: "Founder, Design Instructor · 2018.01 ~ 2019.12",
               desc: "제품 디자인 및 엔지니어링을 가르치는 비영리 교육 기관인 May KING을 설립했습니다. 제품 설계 및 하드웨어 엔지니어링 커리큘럼을 제작하여 운영했습니다.",
+            },
+          ]}
+        />
+        <InfoList
+          label={"Other Experience"}
+          list={[
+            {
+              title: "2022 폴리톤",
+              summary: "디자이너 · 2022.10",
+              desc: "누구나 쉽게 정당을 찾아볼 수 있는 Partypoly를 만들었습니다.",
+            },
+            {
+              title: "Junction Asia 2022 Hackathon",
+              summary: "디자이너 · 2022.08",
+              desc: "마이크로소프트 Teams에서 사용 가능한 OKR 관리 SaaS를 만들었습니다.",
+            },
+            {
+              title: "Junction X Seoul 2021 Hackathon",
+              summary: "디자이너 · 2021.08",
+              desc: "시각장애인을 위한 횡단보도 차량 알림 서비스 Safewalk를 디자인했습니다.",
             },
           ]}
         />
