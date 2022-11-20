@@ -7,10 +7,17 @@ import Thumbnail_election from "@media/election/thumbnail.png";
 import Thumbnail_ald from "@media/ald/thumbnail.jpg";
 import Thumbnail_hydro from "@media/hydro/thumbnail.png";
 import Thumbnail_javara from "@media/javara/thumbnail-1.png";
+import Thumbnail_4ds from "@media/4ds/thumbnail.png";
 import styled from "@emotion/styled";
 import { CardMdList } from "@components/card-md-list";
 
 const Projects = [
+  {
+    title: "42world Design System",
+    description: "디자인 시스템, 프론트엔드 개발",
+    thumbnail: Thumbnail_4ds,
+    link: "/",
+  },
   {
     title: "solift, OKR 기반의 개인목표 관리 서비스",
     description: "프로덕트 디자인, 풀스택 개발",

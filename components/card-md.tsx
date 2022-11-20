@@ -12,7 +12,7 @@ const CardContent = styled.div<{ isWide: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  aspect-ratio: ${(props) => (props.isWide ? 16 / 10 : 3 / 2)};
+  aspect-ratio: ${(props) => (props.isWide ? 16 / 10 : 16 / 9)};
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -67,7 +67,12 @@ export function CardMd({
     <Link href={link}>
       <CardContent isWide={isWide}>
         <ImgContainer>
-          <Image src={thumbnail} layout="fill" objectFit="cover" />
+          <Image
+            src={thumbnail}
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
         </ImgContainer>
         <Info>
           {subtitle !== undefined ? <p>{subtitle}</p> : null}
