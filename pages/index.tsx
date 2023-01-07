@@ -13,16 +13,16 @@ import { CardMdList } from "@components/card-md-list";
 
 const Projects = [
   {
-    title: "42world Design System",
-    description: "디자인 시스템, 프론트엔드 개발",
-    thumbnail: Thumbnail_4ds,
-    link: "/",
-  },
-  {
     title: "solift, OKR 기반의 개인목표 관리 서비스",
     description: "프로덕트 디자인, 풀스택 개발",
     thumbnail: Thumbnail_solift,
     link: "/projects/solift",
+  },
+  {
+    title: "42world Design System",
+    description: "디자인 시스템, 프론트엔드 개발",
+    thumbnail: Thumbnail_4ds,
+    link: "/projects/4ds",
   },
   {
     title: "볶다, 복지 검색경험 개선 프로젝트",
@@ -30,6 +30,7 @@ const Projects = [
     thumbnail: Thumbnail_bokdda,
     link: "/projects/bokdda",
   },
+
   {
     title: "우리의 선택, 우리의 미래",
     description: "프로덕트 디자인, 풀스택 개발",
@@ -77,8 +78,7 @@ const Home: NextPage = () => {
         <H3>안녕하세요 손범수입니다.</H3>
         <P>
           디자인 엔지니어, 디지털 프로덕트 디자이너 입니다. 임팩트 있는 문제를
-          푸는걸 좋아합니다. 지금은 <B color="var(--grey400)">@군대</B>{" "}
-          갔습니다.
+          푸는걸 좋아합니다.
         </P>
       </Header>
       <main style={{ marginTop: "140px" }}>
